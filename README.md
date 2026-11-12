@@ -39,14 +39,7 @@ source .venv/bin/activate        # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## Data
 
-The experiments use publicly available intrusion-detection datasets. Because of their size and licence terms, they are not redistributed here. Download them from the original sources listed below and place the files in `data/`.
-
-| Dataset | Source |
-|---|---|
-| DATASET_NAME_1 | URL |
-| DATASET_NAME_2 | URL |
 
 To simulate zero-day conditions, selected attack families are withheld from training and appear only at test time; the held-out families are listed in the manuscript and in `src/preprocess.py`.
 
