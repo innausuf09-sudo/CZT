@@ -1,0 +1,3550 @@
+{
+ "results": [
+  {
+   "kind": "cross",
+   "source": "UNSW",
+   "target": "CIC",
+   "variant": "nottl",
+   "seed": 1,
+   "n_train": 24284,
+   "n_val": 4048,
+   "n_test": 10050,
+   "test_counts": {
+    "Benign": 5000,
+    "Bot": 500,
+    "Brute_Force_-Web": 500,
+    "DDOS_attack-HOIC": 500,
+    "DDOS_attack-LOIC-UDP": 500,
+    "DDoS_attacks-LOIC-HTTP": 500,
+    "DoS_attacks-GoldenEye": 500,
+    "DoS_attacks-Hulk": 500,
+    "DoS_attacks-Slowloris": 500,
+    "Infilteration": 500,
+    "SQL_Injection": 50,
+    "SSH-Bruteforce": 500
+   },
+   "removed": [
+    "MIN_TTL",
+    "MAX_TTL",
+    "DNS_TTL_ANSWER"
+   ],
+   "det": {
+    "XGBoost": {
+     "auroc": 0.283652396039604,
+     "tpr_fpr1": 0.026336633663366336,
+     "detection": 0.9996039603960396,
+     "test_fpr": 1.0,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 1.0,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 0.996,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 1.0,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "LightGBM": {
+     "auroc": 0.3395188316831683,
+     "tpr_fpr1": 0.040594059405940595,
+     "detection": 0.7966336633663367,
+     "test_fpr": 1.0,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 0.94,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 0.806,
+      "DoS_attacks-Hulk": 0.222,
+      "DoS_attacks-Slowloris": 0.982,
+      "Infilteration": 0.996,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 0.0
+     }
+    },
+    "DNN": {
+     "auroc": 0.36655196039603966,
+     "tpr_fpr1": 0.007702986253500452,
+     "detection": 0.8475247524752475,
+     "test_fpr": 0.9262,
+     "per_class": {
+      "Bot": 0.03,
+      "Brute_Force_-Web": 0.972,
+      "DDOS_attack-HOIC": 0.546,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 0.994,
+      "Infilteration": 0.918,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "ResSE-CNN1D": {
+     "auroc": 0.41028221782178215,
+     "tpr_fpr1": 0.007214985016214488,
+     "detection": 0.8912871287128713,
+     "test_fpr": 0.9948,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 0.978,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 0.998,
+      "DoS_attacks-Hulk": 0.934,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.992,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 0.0
+     }
+    },
+    "B-ProtoMeta": {
+     "auroc": 0.35687239603960397,
+     "tpr_fpr1": 0.05514851485148515,
+     "detection": 0.6411881188118812,
+     "test_fpr": 0.8146,
+     "per_class": {
+      "Bot": 0.002,
+      "Brute_Force_-Web": 0.662,
+      "DDOS_attack-HOIC": 0.052,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 0.076,
+      "DoS_attacks-GoldenEye": 0.904,
+      "DoS_attacks-Hulk": 0.996,
+      "DoS_attacks-Slowloris": 0.996,
+      "Infilteration": 0.752,
+      "SQL_Injection": 0.36,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "CZT-Hybrid": {
+     "auroc": 0.2177629306930693,
+     "tpr_fpr1": 0.0033663366336633663,
+     "detection": 0.9047524752475248,
+     "test_fpr": 1.0,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 1.0,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 0.998,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 1.0,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 0.04
+     }
+    },
+    "CLAD": {
+     "auroc": 0.30703199999999997,
+     "tpr_fpr1": 0.0031683168316831685,
+     "detection": 0.8786138613861386,
+     "test_fpr": 0.9726,
+     "per_class": {
+      "Bot": 0.15,
+      "Brute_Force_-Web": 0.994,
+      "DDOS_attack-HOIC": 0.652,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.978,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 1.0
+     }
+    }
+   },
+   "time_s": 105.16374087333679
+  },
+  {
+   "kind": "cross",
+   "source": "UNSW",
+   "target": "CIC",
+   "variant": "full",
+   "seed": 1,
+   "n_train": 24284,
+   "n_val": 4048,
+   "n_test": 10050,
+   "test_counts": {
+    "Benign": 5000,
+    "Bot": 500,
+    "Brute_Force_-Web": 500,
+    "DDOS_attack-HOIC": 500,
+    "DDOS_attack-LOIC-UDP": 500,
+    "DDoS_attacks-LOIC-HTTP": 500,
+    "DoS_attacks-GoldenEye": 500,
+    "DoS_attacks-Hulk": 500,
+    "DoS_attacks-Slowloris": 500,
+    "Infilteration": 500,
+    "SQL_Injection": 50,
+    "SSH-Bruteforce": 500
+   },
+   "removed": [],
+   "det": {
+    "XGBoost": {
+     "auroc": 0.584834594059406,
+     "tpr_fpr1": 0.13137199434229138,
+     "detection": 0.9924752475247525,
+     "test_fpr": 0.9962,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 0.928,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.996,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "LightGBM": {
+     "auroc": 0.44359495049504954,
+     "tpr_fpr1": 0.19686214775323688,
+     "detection": 0.9936633663366337,
+     "test_fpr": 0.9996,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 0.94,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.996,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "DNN": {
+     "auroc": 0.3585101584158416,
+     "tpr_fpr1": 0.007579847722857301,
+     "detection": 0.9708910891089109,
+     "test_fpr": 0.9464,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 0.814,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 0.976,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 0.998,
+      "Infilteration": 0.918,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "ResSE-CNN1D": {
+     "auroc": 0.38458932673267326,
+     "tpr_fpr1": 0.006772277227722771,
+     "detection": 0.8958415841584159,
+     "test_fpr": 0.9998,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 0.954,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 0.998,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.996,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 0.0
+     }
+    },
+    "B-ProtoMeta": {
+     "auroc": 0.2628461188118812,
+     "tpr_fpr1": 0.0039603960396039604,
+     "detection": 0.9699009900990099,
+     "test_fpr": 0.935,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 0.812,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 0.998,
+      "DoS_attacks-GoldenEye": 0.976,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 0.998,
+      "Infilteration": 0.912,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "CZT-Hybrid": {
+     "auroc": 0.3101972475247525,
+     "tpr_fpr1": 0.0021782178217821784,
+     "detection": 0.9998019801980198,
+     "test_fpr": 1.0,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 0.998,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 1.0,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "CLAD": {
+     "auroc": 0.32710174257425745,
+     "tpr_fpr1": 0.0,
+     "detection": 1.0,
+     "test_fpr": 1.0,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 1.0,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 1.0,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 1.0
+     }
+    }
+   },
+   "time_s": 155.94922423362732
+  },
+  {
+   "kind": "cross",
+   "source": "UNSW",
+   "target": "CIC",
+   "variant": "nottl",
+   "seed": 0,
+   "n_train": 24284,
+   "n_val": 4048,
+   "n_test": 10050,
+   "test_counts": {
+    "Benign": 5000,
+    "Bot": 500,
+    "Brute_Force_-Web": 500,
+    "DDOS_attack-HOIC": 500,
+    "DDOS_attack-LOIC-UDP": 500,
+    "DDoS_attacks-LOIC-HTTP": 500,
+    "DoS_attacks-GoldenEye": 500,
+    "DoS_attacks-Hulk": 500,
+    "DoS_attacks-Slowloris": 500,
+    "Infilteration": 500,
+    "SQL_Injection": 50,
+    "SSH-Bruteforce": 500
+   },
+   "removed": [
+    "MIN_TTL",
+    "MAX_TTL",
+    "DNS_TTL_ANSWER"
+   ],
+   "det": {
+    "XGBoost": {
+     "auroc": 0.25856330693069307,
+     "tpr_fpr1": 0.013465346534653465,
+     "detection": 0.8764356435643564,
+     "test_fpr": 1.0,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 0.956,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 0.858,
+      "DoS_attacks-Hulk": 0.96,
+      "DoS_attacks-Slowloris": 0.978,
+      "Infilteration": 1.0,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 0.0
+     }
+    },
+    "LightGBM": {
+     "auroc": 0.30693754455445543,
+     "tpr_fpr1": 0.024356435643564357,
+     "detection": 0.8704950495049505,
+     "test_fpr": 1.0,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 0.944,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 0.838,
+      "DoS_attacks-Hulk": 0.91,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 1.0,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 0.0
+     }
+    },
+    "DNN": {
+     "auroc": 0.29721342574257426,
+     "tpr_fpr1": 0.004689942678478375,
+     "detection": 0.5522772277227723,
+     "test_fpr": 0.8132,
+     "per_class": {
+      "Bot": 0.124,
+      "Brute_Force_-Web": 0.7,
+      "DDOS_attack-HOIC": 0.258,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 0.018,
+      "DoS_attacks-GoldenEye": 0.9,
+      "DoS_attacks-Hulk": 0.992,
+      "DoS_attacks-Slowloris": 0.87,
+      "Infilteration": 0.624,
+      "SQL_Injection": 0.92,
+      "SSH-Bruteforce": 0.0
+     }
+    },
+    "ResSE-CNN1D": {
+     "auroc": 0.400180396039604,
+     "tpr_fpr1": 0.02219135940743396,
+     "detection": 0.899009900990099,
+     "test_fpr": 0.9998,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 0.98,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 1.0,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 0.0
+     }
+    },
+    "B-ProtoMeta": {
+     "auroc": 0.32455255445544556,
+     "tpr_fpr1": 0.0281980198019802,
+     "detection": 0.5316831683168317,
+     "test_fpr": 0.8228,
+     "per_class": {
+      "Bot": 0.01,
+      "Brute_Force_-Web": 0.774,
+      "DDOS_attack-HOIC": 0.056,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 0.184,
+      "DoS_attacks-GoldenEye": 0.93,
+      "DoS_attacks-Hulk": 0.56,
+      "DoS_attacks-Slowloris": 0.986,
+      "Infilteration": 0.798,
+      "SQL_Injection": 0.12,
+      "SSH-Bruteforce": 0.06
+     }
+    },
+    "CZT-Hybrid": {
+     "auroc": 0.2134801188118812,
+     "tpr_fpr1": 0.0017821782178217822,
+     "detection": 0.900990099009901,
+     "test_fpr": 1.0,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 1.0,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 1.0,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 0.0
+     }
+    },
+    "CLAD": {
+     "auroc": 0.3497490891089109,
+     "tpr_fpr1": 0.0025742574257425744,
+     "detection": 0.9956435643564356,
+     "test_fpr": 0.9946,
+     "per_class": {
+      "Bot": 0.966,
+      "Brute_Force_-Web": 1.0,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.992,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 0.998
+     }
+    }
+   },
+   "time_s": 170.50199389457703
+  },
+  {
+   "kind": "cross",
+   "source": "UNSW",
+   "target": "CIC",
+   "variant": "filtered",
+   "seed": 1,
+   "n_train": 24284,
+   "n_val": 4048,
+   "n_test": 10050,
+   "test_counts": {
+    "Benign": 5000,
+    "Bot": 500,
+    "Brute_Force_-Web": 500,
+    "DDOS_attack-HOIC": 500,
+    "DDOS_attack-LOIC-UDP": 500,
+    "DDoS_attacks-LOIC-HTTP": 500,
+    "DoS_attacks-GoldenEye": 500,
+    "DoS_attacks-Hulk": 500,
+    "DoS_attacks-Slowloris": 500,
+    "Infilteration": 500,
+    "SQL_Injection": 50,
+    "SSH-Bruteforce": 500
+   },
+   "removed": [
+    "SERVER_TCP_FLAGS",
+    "MIN_TTL",
+    "MAX_TTL",
+    "SHORTEST_FLOW_PKT",
+    "MIN_IP_PKT_LEN"
+   ],
+   "det": {
+    "XGBoost": {
+     "auroc": 0.40913126732673266,
+     "tpr_fpr1": 0.019801980198019802,
+     "detection": 0.999009900990099,
+     "test_fpr": 0.999,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 1.0,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 0.99,
+      "Infilteration": 1.0,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "LightGBM": {
+     "auroc": 0.35673528712871283,
+     "tpr_fpr1": 0.03564356435643564,
+     "detection": 1.0,
+     "test_fpr": 0.9998,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 1.0,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 1.0,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "DNN": {
+     "auroc": 0.3781950099009901,
+     "tpr_fpr1": 0.0073688070561442115,
+     "detection": 0.5778217821782178,
+     "test_fpr": 0.8274,
+     "per_class": {
+      "Bot": 0.012,
+      "Brute_Force_-Web": 0.812,
+      "DDOS_attack-HOIC": 0.19,
+      "DDOS_attack-LOIC-UDP": 0.016,
+      "DDoS_attacks-LOIC-HTTP": 0.982,
+      "DoS_attacks-GoldenEye": 0.976,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 0.976,
+      "Infilteration": 0.828,
+      "SQL_Injection": 0.44,
+      "SSH-Bruteforce": 0.0
+     }
+    },
+    "ResSE-CNN1D": {
+     "auroc": 0.4287036039603961,
+     "tpr_fpr1": 0.006945994019878486,
+     "detection": 0.9007920792079208,
+     "test_fpr": 0.9968,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 1.0,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.998,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 0.0
+     }
+    },
+    "B-ProtoMeta": {
+     "auroc": 0.43515649504950493,
+     "tpr_fpr1": 0.021584158415841583,
+     "detection": 0.6106930693069307,
+     "test_fpr": 0.7334,
+     "per_class": {
+      "Bot": 0.008,
+      "Brute_Force_-Web": 0.68,
+      "DDOS_attack-HOIC": 0.16,
+      "DDOS_attack-LOIC-UDP": 0.61,
+      "DDoS_attacks-LOIC-HTTP": 0.908,
+      "DoS_attacks-GoldenEye": 0.976,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 0.976,
+      "Infilteration": 0.766,
+      "SQL_Injection": 0.14,
+      "SSH-Bruteforce": 0.07
+     }
+    },
+    "CZT-Hybrid": {
+     "auroc": 0.4166564158415841,
+     "tpr_fpr1": 0.06455445544554456,
+     "detection": 0.9736633663366336,
+     "test_fpr": 0.9848,
+     "per_class": {
+      "Bot": 0.846,
+      "Brute_Force_-Web": 1.0,
+      "DDOS_attack-HOIC": 0.948,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.976,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 0.964
+     }
+    },
+    "CLAD": {
+     "auroc": 0.3213368316831683,
+     "tpr_fpr1": 0.002376237623762376,
+     "detection": 0.7316831683168317,
+     "test_fpr": 0.8492,
+     "per_class": {
+      "Bot": 0.03,
+      "Brute_Force_-Web": 0.93,
+      "DDOS_attack-HOIC": 0.536,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 0.976,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 0.976,
+      "Infilteration": 0.846,
+      "SQL_Injection": 0.96,
+      "SSH-Bruteforce": 0.0
+     }
+    }
+   },
+   "time_s": 178.4559850692749
+  },
+  {
+   "kind": "cross",
+   "source": "UNSW",
+   "target": "CIC",
+   "variant": "nottl",
+   "seed": 2,
+   "n_train": 24284,
+   "n_val": 4048,
+   "n_test": 10050,
+   "test_counts": {
+    "Benign": 5000,
+    "Bot": 500,
+    "Brute_Force_-Web": 500,
+    "DDOS_attack-HOIC": 500,
+    "DDOS_attack-LOIC-UDP": 500,
+    "DDoS_attacks-LOIC-HTTP": 500,
+    "DoS_attacks-GoldenEye": 500,
+    "DoS_attacks-Hulk": 500,
+    "DoS_attacks-Slowloris": 500,
+    "Infilteration": 500,
+    "SQL_Injection": 50,
+    "SSH-Bruteforce": 500
+   },
+   "removed": [
+    "MIN_TTL",
+    "MAX_TTL",
+    "DNS_TTL_ANSWER"
+   ],
+   "det": {
+    "XGBoost": {
+     "auroc": 0.27740265346534654,
+     "tpr_fpr1": 0.022455445544554455,
+     "detection": 0.7011881188118811,
+     "test_fpr": 0.9974,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 0.924,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 0.016,
+      "DoS_attacks-Hulk": 0.082,
+      "DoS_attacks-Slowloris": 0.968,
+      "Infilteration": 0.992,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 0.0
+     }
+    },
+    "LightGBM": {
+     "auroc": 0.3472630891089109,
+     "tpr_fpr1": 0.02188118811881188,
+     "detection": 0.8132673267326732,
+     "test_fpr": 1.0,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 0.93,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 0.29,
+      "DoS_attacks-Hulk": 0.91,
+      "DoS_attacks-Slowloris": 0.986,
+      "Infilteration": 0.998,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 0.0
+     }
+    },
+    "DNN": {
+     "auroc": 0.3274730693069307,
+     "tpr_fpr1": 0.005973933336951549,
+     "detection": 0.5087128712871287,
+     "test_fpr": 0.7834,
+     "per_class": {
+      "Bot": 0.008,
+      "Brute_Force_-Web": 0.614,
+      "DDOS_attack-HOIC": 0.076,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 0.012,
+      "DoS_attacks-GoldenEye": 0.902,
+      "DoS_attacks-Hulk": 0.984,
+      "DoS_attacks-Slowloris": 0.852,
+      "Infilteration": 0.61,
+      "SQL_Injection": 0.8,
+      "SSH-Bruteforce": 0.0
+     }
+    },
+    "ResSE-CNN1D": {
+     "auroc": 0.2996531287128713,
+     "tpr_fpr1": 0.004185522960648733,
+     "detection": 0.8948514851485149,
+     "test_fpr": 1.0,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 0.976,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 0.998,
+      "DoS_attacks-Hulk": 0.966,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.998,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 0.0
+     }
+    },
+    "B-ProtoMeta": {
+     "auroc": 0.36908162376237624,
+     "tpr_fpr1": 0.01465734808774995,
+     "detection": 0.5879207920792079,
+     "test_fpr": 0.7812,
+     "per_class": {
+      "Bot": 0.006,
+      "Brute_Force_-Web": 0.552,
+      "DDOS_attack-HOIC": 0.038,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 0.002,
+      "DoS_attacks-GoldenEye": 0.898,
+      "DoS_attacks-Hulk": 0.758,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.678,
+      "SQL_Injection": 0.34,
+      "SSH-Bruteforce": 0.972
+     }
+    },
+    "CZT-Hybrid": {
+     "auroc": 0.31098350495049504,
+     "tpr_fpr1": 0.022178217821782177,
+     "detection": 0.8996039603960396,
+     "test_fpr": 1.0,
+     "per_class": {
+      "Bot": 0.984,
+      "Brute_Force_-Web": 0.992,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 0.96,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 1.0,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 0.05
+     }
+    },
+    "CLAD": {
+     "auroc": 0.274772,
+     "tpr_fpr1": 0.0007920792079207921,
+     "detection": 0.9934653465346535,
+     "test_fpr": 0.9994,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 0.998,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 0.936,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 1.0,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 1.0
+     }
+    }
+   },
+   "time_s": 188.75479698181152
+  },
+  {
+   "kind": "cross",
+   "source": "UNSW",
+   "target": "CIC",
+   "variant": "full",
+   "seed": 2,
+   "n_train": 24284,
+   "n_val": 4048,
+   "n_test": 10050,
+   "test_counts": {
+    "Benign": 5000,
+    "Bot": 500,
+    "Brute_Force_-Web": 500,
+    "DDOS_attack-HOIC": 500,
+    "DDOS_attack-LOIC-UDP": 500,
+    "DDoS_attacks-LOIC-HTTP": 500,
+    "DoS_attacks-GoldenEye": 500,
+    "DoS_attacks-Hulk": 500,
+    "DoS_attacks-Slowloris": 500,
+    "Infilteration": 500,
+    "SQL_Injection": 50,
+    "SSH-Bruteforce": 500
+   },
+   "removed": [],
+   "det": {
+    "XGBoost": {
+     "auroc": 0.40477714851485147,
+     "tpr_fpr1": 0.022376237623762375,
+     "detection": 0.9926732673267327,
+     "test_fpr": 0.9922,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 0.93,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.996,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "LightGBM": {
+     "auroc": 0.5221156831683168,
+     "tpr_fpr1": 0.09603960396039604,
+     "detection": 0.994059405940594,
+     "test_fpr": 0.996,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 0.942,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.998,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "DNN": {
+     "auroc": 0.3448430297029703,
+     "tpr_fpr1": 0.004558415841584159,
+     "detection": 0.7865346534653466,
+     "test_fpr": 0.7962,
+     "per_class": {
+      "Bot": 0.986,
+      "Brute_Force_-Web": 0.566,
+      "DDOS_attack-HOIC": 0.886,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 0.096,
+      "DoS_attacks-GoldenEye": 0.886,
+      "DoS_attacks-Hulk": 0.986,
+      "DoS_attacks-Slowloris": 0.85,
+      "Infilteration": 0.596,
+      "SQL_Injection": 0.92,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "ResSE-CNN1D": {
+     "auroc": 0.298587702970297,
+     "tpr_fpr1": 0.004399990285210042,
+     "detection": 0.974059405940594,
+     "test_fpr": 0.9918,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 0.934,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 0.978,
+      "DoS_attacks-Hulk": 0.994,
+      "DoS_attacks-Slowloris": 0.854,
+      "Infilteration": 0.986,
+      "SQL_Injection": 0.94,
+      "SSH-Bruteforce": 0.998
+     }
+    },
+    "B-ProtoMeta": {
+     "auroc": 0.3357645148514852,
+     "tpr_fpr1": 0.009000900090009001,
+     "detection": 0.9665346534653465,
+     "test_fpr": 0.9216,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 0.804,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 0.982,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 0.998,
+      "Infilteration": 0.878,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "CZT-Hybrid": {
+     "auroc": 0.36169047524752473,
+     "tpr_fpr1": 0.08435643564356436,
+     "detection": 0.997029702970297,
+     "test_fpr": 0.999,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 0.97,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 1.0,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "CLAD": {
+     "auroc": 0.3352854455445545,
+     "tpr_fpr1": 0.00039603960396039607,
+     "detection": 0.9994059405940594,
+     "test_fpr": 0.9968,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 1.0,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.994,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 1.0
+     }
+    }
+   },
+   "time_s": 207.40689301490784
+  },
+  {
+   "kind": "cross",
+   "source": "UNSW",
+   "target": "CIC",
+   "variant": "full",
+   "seed": 0,
+   "n_train": 24284,
+   "n_val": 4048,
+   "n_test": 10050,
+   "test_counts": {
+    "Benign": 5000,
+    "Bot": 500,
+    "Brute_Force_-Web": 500,
+    "DDOS_attack-HOIC": 500,
+    "DDOS_attack-LOIC-UDP": 500,
+    "DDoS_attacks-LOIC-HTTP": 500,
+    "DoS_attacks-GoldenEye": 500,
+    "DoS_attacks-Hulk": 500,
+    "DoS_attacks-Slowloris": 500,
+    "Infilteration": 500,
+    "SQL_Injection": 50,
+    "SSH-Bruteforce": 500
+   },
+   "removed": [],
+   "det": {
+    "XGBoost": {
+     "auroc": 0.40033516831683175,
+     "tpr_fpr1": 0.13280198019801978,
+     "detection": 0.9932673267326733,
+     "test_fpr": 0.9986,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 0.934,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.998,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "LightGBM": {
+     "auroc": 0.35364827722772274,
+     "tpr_fpr1": 0.009306930693069307,
+     "detection": 0.9938613861386139,
+     "test_fpr": 0.9998,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 0.938,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 1.0,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "DNN": {
+     "auroc": 0.3589937425742574,
+     "tpr_fpr1": 0.056122112211221126,
+     "detection": 0.9714851485148515,
+     "test_fpr": 0.9326,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 0.816,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 0.988,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.908,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "ResSE-CNN1D": {
+     "auroc": 0.5301352475247525,
+     "tpr_fpr1": 0.039132484677039135,
+     "detection": 0.8976237623762376,
+     "test_fpr": 1.0,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 0.966,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 1.0,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 0.0
+     }
+    },
+    "B-ProtoMeta": {
+     "auroc": 0.3654419207920792,
+     "tpr_fpr1": 0.01443508836864995,
+     "detection": 0.7877227722772278,
+     "test_fpr": 0.8524,
+     "per_class": {
+      "Bot": 0.992,
+      "Brute_Force_-Web": 0.49,
+      "DDOS_attack-HOIC": 0.936,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 0.1,
+      "DoS_attacks-GoldenEye": 0.762,
+      "DoS_attacks-Hulk": 0.996,
+      "DoS_attacks-Slowloris": 0.862,
+      "Infilteration": 0.724,
+      "SQL_Injection": 0.94,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "CZT-Hybrid": {
+     "auroc": 0.3213937425742574,
+     "tpr_fpr1": 0.0,
+     "detection": 1.0,
+     "test_fpr": 1.0,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 1.0,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 1.0,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "CLAD": {
+     "auroc": 0.3518259801980198,
+     "tpr_fpr1": 0.0007920792079207921,
+     "detection": 0.9998019801980198,
+     "test_fpr": 0.999,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 1.0,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.998,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 1.0
+     }
+    }
+   },
+   "time_s": 207.66630697250366
+  },
+  {
+   "kind": "cross",
+   "source": "UNSW",
+   "target": "CIC",
+   "variant": "filtered",
+   "seed": 0,
+   "n_train": 24284,
+   "n_val": 4048,
+   "n_test": 10050,
+   "test_counts": {
+    "Benign": 5000,
+    "Bot": 500,
+    "Brute_Force_-Web": 500,
+    "DDOS_attack-HOIC": 500,
+    "DDOS_attack-LOIC-UDP": 500,
+    "DDoS_attacks-LOIC-HTTP": 500,
+    "DoS_attacks-GoldenEye": 500,
+    "DoS_attacks-Hulk": 500,
+    "DoS_attacks-Slowloris": 500,
+    "Infilteration": 500,
+    "SQL_Injection": 50,
+    "SSH-Bruteforce": 500
+   },
+   "removed": [
+    "SERVER_TCP_FLAGS",
+    "MIN_TTL",
+    "MAX_TTL",
+    "SHORTEST_FLOW_PKT",
+    "MIN_IP_PKT_LEN"
+   ],
+   "det": {
+    "XGBoost": {
+     "auroc": 0.4102183168316832,
+     "tpr_fpr1": 0.0019801980198019802,
+     "detection": 0.9968316831683168,
+     "test_fpr": 0.9882,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 1.0,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 0.984,
+      "Infilteration": 0.984,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "LightGBM": {
+     "auroc": 0.27289695049504953,
+     "tpr_fpr1": 0.0033663366336633663,
+     "detection": 1.0,
+     "test_fpr": 1.0,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 1.0,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 1.0,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "DNN": {
+     "auroc": 0.34707738613861383,
+     "tpr_fpr1": 0.002635186595582635,
+     "detection": 0.3885148514851485,
+     "test_fpr": 0.71,
+     "per_class": {
+      "Bot": 0.0,
+      "Brute_Force_-Web": 0.57,
+      "DDOS_attack-HOIC": 0.004,
+      "DDOS_attack-LOIC-UDP": 0.006,
+      "DDoS_attacks-LOIC-HTTP": 0.018,
+      "DoS_attacks-GoldenEye": 0.664,
+      "DoS_attacks-Hulk": 0.998,
+      "DoS_attacks-Slowloris": 0.942,
+      "Infilteration": 0.686,
+      "SQL_Injection": 0.36,
+      "SSH-Bruteforce": 0.0
+     }
+    },
+    "ResSE-CNN1D": {
+     "auroc": 0.3804269702970297,
+     "tpr_fpr1": 0.007077125623010062,
+     "detection": 0.9,
+     "test_fpr": 0.9962,
+     "per_class": {
+      "Bot": 0.99,
+      "Brute_Force_-Web": 1.0,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 1.0,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 0.0
+     }
+    },
+    "B-ProtoMeta": {
+     "auroc": 0.3673395445544555,
+     "tpr_fpr1": 0.0029702970297029703,
+     "detection": 0.22613861386138615,
+     "test_fpr": 0.3726,
+     "per_class": {
+      "Bot": 0.0,
+      "Brute_Force_-Web": 0.198,
+      "DDOS_attack-HOIC": 0.0,
+      "DDOS_attack-LOIC-UDP": 0.028,
+      "DDoS_attacks-LOIC-HTTP": 0.002,
+      "DoS_attacks-GoldenEye": 0.38,
+      "DoS_attacks-Hulk": 0.942,
+      "DoS_attacks-Slowloris": 0.48,
+      "Infilteration": 0.254,
+      "SQL_Injection": 0.0,
+      "SSH-Bruteforce": 0.0
+     }
+    },
+    "CZT-Hybrid": {
+     "auroc": 0.2970969702970297,
+     "tpr_fpr1": 0.00019801980198019803,
+     "detection": 0.8835643564356436,
+     "test_fpr": 0.9914,
+     "per_class": {
+      "Bot": 0.836,
+      "Brute_Force_-Web": 1.0,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.988,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 0.0
+     }
+    },
+    "CLAD": {
+     "auroc": 0.30897768316831686,
+     "tpr_fpr1": 0.002772277227722772,
+     "detection": 0.8986138613861386,
+     "test_fpr": 0.9854,
+     "per_class": {
+      "Bot": 0.26,
+      "Brute_Force_-Web": 0.996,
+      "DDOS_attack-HOIC": 0.752,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 0.988,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.98,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 1.0
+     }
+    }
+   },
+   "time_s": 248.07242703437805
+  },
+  {
+   "kind": "cross",
+   "source": "UNSW",
+   "target": "CIC",
+   "variant": "filtered",
+   "seed": 2,
+   "n_train": 24284,
+   "n_val": 4048,
+   "n_test": 10050,
+   "test_counts": {
+    "Benign": 5000,
+    "Bot": 500,
+    "Brute_Force_-Web": 500,
+    "DDOS_attack-HOIC": 500,
+    "DDOS_attack-LOIC-UDP": 500,
+    "DDoS_attacks-LOIC-HTTP": 500,
+    "DoS_attacks-GoldenEye": 500,
+    "DoS_attacks-Hulk": 500,
+    "DoS_attacks-Slowloris": 500,
+    "Infilteration": 500,
+    "SQL_Injection": 50,
+    "SSH-Bruteforce": 500
+   },
+   "removed": [
+    "SERVER_TCP_FLAGS",
+    "MIN_TTL",
+    "MAX_TTL",
+    "SHORTEST_FLOW_PKT",
+    "MIN_IP_PKT_LEN"
+   ],
+   "det": {
+    "XGBoost": {
+     "auroc": 0.4181605940594059,
+     "tpr_fpr1": 0.029567483064095883,
+     "detection": 0.884950495049505,
+     "test_fpr": 0.9924,
+     "per_class": {
+      "Bot": 0.184,
+      "Brute_Force_-Web": 1.0,
+      "DDOS_attack-HOIC": 0.674,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 0.998,
+      "DoS_attacks-Slowloris": 0.986,
+      "Infilteration": 0.996,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "LightGBM": {
+     "auroc": 0.35831982178217825,
+     "tpr_fpr1": 0.11473267326732674,
+     "detection": 0.9005940594059406,
+     "test_fpr": 0.9998,
+     "per_class": {
+      "Bot": 1.0,
+      "Brute_Force_-Web": 1.0,
+      "DDOS_attack-HOIC": 1.0,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 0.996,
+      "Infilteration": 1.0,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 0.0
+     }
+    },
+    "DNN": {
+     "auroc": 0.3161677227722772,
+     "tpr_fpr1": 0.004576506895233452,
+     "detection": 0.47148514851485146,
+     "test_fpr": 0.6758,
+     "per_class": {
+      "Bot": 0.006,
+      "Brute_Force_-Web": 0.51,
+      "DDOS_attack-HOIC": 0.014,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 0.002,
+      "DoS_attacks-GoldenEye": 0.886,
+      "DoS_attacks-Hulk": 0.974,
+      "DoS_attacks-Slowloris": 0.844,
+      "Infilteration": 0.512,
+      "SQL_Injection": 0.14,
+      "SSH-Bruteforce": 0.0
+     }
+    },
+    "ResSE-CNN1D": {
+     "auroc": 0.34555453465346536,
+     "tpr_fpr1": 0.0019801980198019802,
+     "detection": 0.6302970297029703,
+     "test_fpr": 0.8252,
+     "per_class": {
+      "Bot": 0.996,
+      "Brute_Force_-Web": 0.742,
+      "DDOS_attack-HOIC": 0.93,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 0.096,
+      "DoS_attacks-GoldenEye": 0.746,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 0.09,
+      "Infilteration": 0.674,
+      "SQL_Injection": 0.92,
+      "SSH-Bruteforce": 0.0
+     }
+    },
+    "B-ProtoMeta": {
+     "auroc": 0.4207698217821782,
+     "tpr_fpr1": 0.04203250513730618,
+     "detection": 0.5493069306930694,
+     "test_fpr": 0.7926,
+     "per_class": {
+      "Bot": 0.006,
+      "Brute_Force_-Web": 0.598,
+      "DDOS_attack-HOIC": 0.054,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 0.008,
+      "DoS_attacks-GoldenEye": 0.984,
+      "DoS_attacks-Hulk": 0.998,
+      "DoS_attacks-Slowloris": 0.988,
+      "Infilteration": 0.74,
+      "SQL_Injection": 0.08,
+      "SSH-Bruteforce": 0.164
+     }
+    },
+    "CZT-Hybrid": {
+     "auroc": 0.3195971089108911,
+     "tpr_fpr1": 0.0021782178217821784,
+     "detection": 0.8299009900990099,
+     "test_fpr": 0.9872,
+     "per_class": {
+      "Bot": 0.956,
+      "Brute_Force_-Web": 0.986,
+      "DDOS_attack-HOIC": 0.68,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 0.106,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.966,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 0.588
+     }
+    },
+    "CLAD": {
+     "auroc": 0.387441504950495,
+     "tpr_fpr1": 0.0021782178217821784,
+     "detection": 0.6489108910891089,
+     "test_fpr": 0.8262,
+     "per_class": {
+      "Bot": 0.322,
+      "Brute_Force_-Web": 0.764,
+      "DDOS_attack-HOIC": 0.656,
+      "DDOS_attack-LOIC-UDP": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 0.1,
+      "DoS_attacks-GoldenEye": 0.912,
+      "DoS_attacks-Hulk": 0.996,
+      "DoS_attacks-Slowloris": 0.994,
+      "Infilteration": 0.71,
+      "SQL_Injection": 1.0,
+      "SSH-Bruteforce": 0.0
+     }
+    }
+   },
+   "time_s": 302.5626208782196
+  },
+  {
+   "kind": "cross",
+   "source": "CIC",
+   "target": "UNSW",
+   "variant": "full",
+   "seed": 2,
+   "n_train": 27206,
+   "n_val": 4519,
+   "n_test": 9138,
+   "test_counts": {
+    "Analysis": 500,
+    "Backdoor": 500,
+    "Benign": 5000,
+    "DoS": 500,
+    "Exploits": 500,
+    "Fuzzers": 500,
+    "Generic": 500,
+    "Reconnaissance": 500,
+    "Shellcode": 500,
+    "Worms": 138
+   },
+   "removed": [],
+   "det": {
+    "XGBoost": {
+     "auroc": 0.31607730787820204,
+     "tpr_fpr1": 0.017883035282745288,
+     "detection": 0.06621556307394877,
+     "test_fpr": 0.0614,
+     "per_class": {
+      "Analysis": 0.0,
+      "Backdoor": 0.036,
+      "DoS": 0.058,
+      "Exploits": 0.048,
+      "Fuzzers": 0.088,
+      "Generic": 0.092,
+      "Reconnaissance": 0.088,
+      "Shellcode": 0.138,
+      "Worms": 0.0
+     }
+    },
+    "LightGBM": {
+     "auroc": 0.39886297728371195,
+     "tpr_fpr1": 0.040357660705654906,
+     "detection": 0.05292411793136781,
+     "test_fpr": 0.018,
+     "per_class": {
+      "Analysis": 0.0,
+      "Backdoor": 0.034,
+      "DoS": 0.056,
+      "Exploits": 0.038,
+      "Fuzzers": 0.09,
+      "Generic": 0.08,
+      "Reconnaissance": 0.07,
+      "Shellcode": 0.068,
+      "Worms": 0.007246376811594203
+     }
+    },
+    "DNN": {
+     "auroc": 0.30261234896085065,
+     "tpr_fpr1": 0.0,
+     "detection": 0.24045432576123732,
+     "test_fpr": 0.5996,
+     "per_class": {
+      "Analysis": 0.178,
+      "Backdoor": 0.146,
+      "DoS": 0.274,
+      "Exploits": 0.238,
+      "Fuzzers": 0.078,
+      "Generic": 0.268,
+      "Reconnaissance": 0.146,
+      "Shellcode": 0.66,
+      "Worms": 0.007246376811594203
+     }
+    },
+    "ResSE-CNN1D": {
+     "auroc": 0.5295333736104398,
+     "tpr_fpr1": 0.022232962783953602,
+     "detection": 0.5343160947317545,
+     "test_fpr": 0.4506,
+     "per_class": {
+      "Analysis": 0.032,
+      "Backdoor": 0.59,
+      "DoS": 0.49,
+      "Exploits": 0.542,
+      "Fuzzers": 0.484,
+      "Generic": 0.464,
+      "Reconnaissance": 0.776,
+      "Shellcode": 0.824,
+      "Worms": 0.7971014492753623
+     }
+    },
+    "B-ProtoMeta": {
+     "auroc": 0.47261452392460124,
+     "tpr_fpr1": 0.003624939584340261,
+     "detection": 0.24818753020782988,
+     "test_fpr": 0.3336,
+     "per_class": {
+      "Analysis": 0.786,
+      "Backdoor": 0.068,
+      "DoS": 0.228,
+      "Exploits": 0.188,
+      "Fuzzers": 0.05,
+      "Generic": 0.25,
+      "Reconnaissance": 0.124,
+      "Shellcode": 0.31,
+      "Worms": 0.18115942028985507
+     }
+    },
+    "CZT-Hybrid": {
+     "auroc": 0.4728944900918318,
+     "tpr_fpr1": 0.014258095698405027,
+     "detection": 0.35862735621072983,
+     "test_fpr": 0.4594,
+     "per_class": {
+      "Analysis": 0.556,
+      "Backdoor": 0.2,
+      "DoS": 0.316,
+      "Exploits": 0.314,
+      "Fuzzers": 0.188,
+      "Generic": 0.376,
+      "Reconnaissance": 0.274,
+      "Shellcode": 0.528,
+      "Worms": 0.782608695652174
+     }
+    },
+    "CLAD": {
+     "auroc": 0.4850094006766554,
+     "tpr_fpr1": 0.039149347510874816,
+     "detection": 0.5606573223779604,
+     "test_fpr": 0.5896,
+     "per_class": {
+      "Analysis": 0.994,
+      "Backdoor": 0.362,
+      "DoS": 0.544,
+      "Exploits": 0.44,
+      "Fuzzers": 0.368,
+      "Generic": 0.616,
+      "Reconnaissance": 0.332,
+      "Shellcode": 0.77,
+      "Worms": 0.7753623188405797
+     }
+    }
+   },
+   "time_s": 247.93763303756714
+  },
+  {
+   "kind": "cross",
+   "source": "CIC",
+   "target": "UNSW",
+   "variant": "full",
+   "seed": 0,
+   "n_train": 27206,
+   "n_val": 4519,
+   "n_test": 9138,
+   "test_counts": {
+    "Analysis": 500,
+    "Backdoor": 500,
+    "Benign": 5000,
+    "DoS": 500,
+    "Exploits": 500,
+    "Fuzzers": 500,
+    "Generic": 500,
+    "Reconnaissance": 500,
+    "Shellcode": 500,
+    "Worms": 138
+   },
+   "removed": [],
+   "det": {
+    "XGBoost": {
+     "auroc": 0.15058946350894153,
+     "tpr_fpr1": 0.02247462542290962,
+     "detection": 0.06452392460125665,
+     "test_fpr": 0.308,
+     "per_class": {
+      "Analysis": 0.0,
+      "Backdoor": 0.028,
+      "DoS": 0.054,
+      "Exploits": 0.05,
+      "Fuzzers": 0.082,
+      "Generic": 0.108,
+      "Reconnaissance": 0.092,
+      "Shellcode": 0.12,
+      "Worms": 0.0
+     }
+    },
+    "LightGBM": {
+     "auroc": 0.12897158047365878,
+     "tpr_fpr1": 0.017158047365877234,
+     "detection": 0.05268245529241179,
+     "test_fpr": 0.3804,
+     "per_class": {
+      "Analysis": 0.0,
+      "Backdoor": 0.028,
+      "DoS": 0.04,
+      "Exploits": 0.048,
+      "Fuzzers": 0.084,
+      "Generic": 0.09,
+      "Reconnaissance": 0.072,
+      "Shellcode": 0.07,
+      "Worms": 0.014492753623188406
+     }
+    },
+    "DNN": {
+     "auroc": 0.27038849685838573,
+     "tpr_fpr1": 0.0026582890285161915,
+     "detection": 0.22692121797970033,
+     "test_fpr": 0.2962,
+     "per_class": {
+      "Analysis": 0.73,
+      "Backdoor": 0.064,
+      "DoS": 0.234,
+      "Exploits": 0.136,
+      "Fuzzers": 0.03,
+      "Generic": 0.238,
+      "Reconnaissance": 0.14,
+      "Shellcode": 0.282,
+      "Worms": 0.08695652173913043
+     }
+    },
+    "ResSE-CNN1D": {
+     "auroc": 0.45181735137747703,
+     "tpr_fpr1": 0.00459159014016433,
+     "detection": 0.4828419526341228,
+     "test_fpr": 0.4372,
+     "per_class": {
+      "Analysis": 0.99,
+      "Backdoor": 0.332,
+      "DoS": 0.394,
+      "Exploits": 0.44,
+      "Fuzzers": 0.274,
+      "Generic": 0.424,
+      "Reconnaissance": 0.36,
+      "Shellcode": 0.562,
+      "Worms": 0.7971014492753623
+     }
+    },
+    "B-ProtoMeta": {
+     "auroc": 0.14373757854035765,
+     "tpr_fpr1": 0.0004833252779120348,
+     "detection": 0.11672305461575641,
+     "test_fpr": 0.4908,
+     "per_class": {
+      "Analysis": 0.056,
+      "Backdoor": 0.044,
+      "DoS": 0.144,
+      "Exploits": 0.08,
+      "Fuzzers": 0.02,
+      "Generic": 0.256,
+      "Reconnaissance": 0.104,
+      "Shellcode": 0.258,
+      "Worms": 0.014492753623188406
+     }
+    },
+    "CZT-Hybrid": {
+     "auroc": 0.1462202996616723,
+     "tpr_fpr1": 0.0009666505558240696,
+     "detection": 0.19913001449975834,
+     "test_fpr": 0.7632,
+     "per_class": {
+      "Analysis": 0.324,
+      "Backdoor": 0.078,
+      "DoS": 0.208,
+      "Exploits": 0.178,
+      "Fuzzers": 0.13,
+      "Generic": 0.274,
+      "Reconnaissance": 0.156,
+      "Shellcode": 0.284,
+      "Worms": 0.057971014492753624
+     }
+    },
+    "CLAD": {
+     "auroc": 0.44777153214113097,
+     "tpr_fpr1": 0.006283228612856452,
+     "detection": 0.5019333011116481,
+     "test_fpr": 0.4014,
+     "per_class": {
+      "Analysis": 0.004,
+      "Backdoor": 0.416,
+      "DoS": 0.484,
+      "Exploits": 0.344,
+      "Fuzzers": 0.528,
+      "Generic": 0.478,
+      "Reconnaissance": 0.774,
+      "Shellcode": 0.93,
+      "Worms": 0.7101449275362319
+     }
+    }
+   },
+   "time_s": 372.4798250198364
+  },
+  {
+   "kind": "cross",
+   "source": "CIC",
+   "target": "UNSW",
+   "variant": "nottl",
+   "seed": 2,
+   "n_train": 27206,
+   "n_val": 4519,
+   "n_test": 9138,
+   "test_counts": {
+    "Analysis": 500,
+    "Backdoor": 500,
+    "Benign": 5000,
+    "DoS": 500,
+    "Exploits": 500,
+    "Fuzzers": 500,
+    "Generic": 500,
+    "Reconnaissance": 500,
+    "Shellcode": 500,
+    "Worms": 138
+   },
+   "removed": [
+    "MIN_TTL",
+    "MAX_TTL",
+    "DNS_TTL_ANSWER"
+   ],
+   "det": {
+    "XGBoost": {
+     "auroc": 0.2933696471725471,
+     "tpr_fpr1": 0.016191396810053167,
+     "detection": 0.04253262445625906,
+     "test_fpr": 0.0264,
+     "per_class": {
+      "Analysis": 0.0,
+      "Backdoor": 0.032,
+      "DoS": 0.054,
+      "Exploits": 0.034,
+      "Fuzzers": 0.09,
+      "Generic": 0.048,
+      "Reconnaissance": 0.044,
+      "Shellcode": 0.05,
+      "Worms": 0.0
+     }
+    },
+    "LightGBM": {
+     "auroc": 0.31563605606573225,
+     "tpr_fpr1": 0.014741420976317062,
+     "detection": 0.04156597390043499,
+     "test_fpr": 0.0304,
+     "per_class": {
+      "Analysis": 0.0,
+      "Backdoor": 0.036,
+      "DoS": 0.048,
+      "Exploits": 0.03,
+      "Fuzzers": 0.092,
+      "Generic": 0.05,
+      "Reconnaissance": 0.05,
+      "Shellcode": 0.038,
+      "Worms": 0.0
+     }
+    },
+    "DNN": {
+     "auroc": 0.49609110681488644,
+     "tpr_fpr1": 0.0028999516674722086,
+     "detection": 0.2832286128564524,
+     "test_fpr": 0.3892,
+     "per_class": {
+      "Analysis": 0.002,
+      "Backdoor": 0.254,
+      "DoS": 0.224,
+      "Exploits": 0.274,
+      "Fuzzers": 0.196,
+      "Generic": 0.28,
+      "Reconnaissance": 0.31,
+      "Shellcode": 0.6,
+      "Worms": 0.7391304347826086
+     }
+    },
+    "ResSE-CNN1D": {
+     "auroc": 0.7640706863218947,
+     "tpr_fpr1": 0.07201546640889318,
+     "detection": 0.5113581440309328,
+     "test_fpr": 0.2016,
+     "per_class": {
+      "Analysis": 0.09,
+      "Backdoor": 0.484,
+      "DoS": 0.404,
+      "Exploits": 0.382,
+      "Fuzzers": 0.608,
+      "Generic": 0.318,
+      "Reconnaissance": 0.828,
+      "Shellcode": 0.902,
+      "Worms": 0.782608695652174
+     }
+    },
+    "B-ProtoMeta": {
+     "auroc": 0.5451135814403093,
+     "tpr_fpr1": 0.032382793620106334,
+     "detection": 0.22015466408893186,
+     "test_fpr": 0.402,
+     "per_class": {
+      "Analysis": 0.004,
+      "Backdoor": 0.188,
+      "DoS": 0.176,
+      "Exploits": 0.232,
+      "Fuzzers": 0.14,
+      "Generic": 0.278,
+      "Reconnaissance": 0.188,
+      "Shellcode": 0.412,
+      "Worms": 0.7391304347826086
+     }
+    },
+    "CZT-Hybrid": {
+     "auroc": 0.6110792170130498,
+     "tpr_fpr1": 0.027307878202029966,
+     "detection": 0.277670372160464,
+     "test_fpr": 0.1652,
+     "per_class": {
+      "Analysis": 0.004,
+      "Backdoor": 0.248,
+      "DoS": 0.22,
+      "Exploits": 0.22,
+      "Fuzzers": 0.25,
+      "Generic": 0.264,
+      "Reconnaissance": 0.352,
+      "Shellcode": 0.526,
+      "Worms": 0.7753623188405797
+     }
+    },
+    "CLAD": {
+     "auroc": 0.26582290961817306,
+     "tpr_fpr1": 0.0002416626389560174,
+     "detection": 0.3784436926051232,
+     "test_fpr": 0.7488,
+     "per_class": {
+      "Analysis": 0.302,
+      "Backdoor": 0.268,
+      "DoS": 0.374,
+      "Exploits": 0.428,
+      "Fuzzers": 0.178,
+      "Generic": 0.43,
+      "Reconnaissance": 0.23,
+      "Shellcode": 0.724,
+      "Worms": 0.717391304347826
+     }
+    }
+   },
+   "time_s": 329.5606870651245
+  },
+  {
+   "kind": "cross",
+   "source": "CIC",
+   "target": "UNSW",
+   "variant": "full",
+   "seed": 1,
+   "n_train": 27206,
+   "n_val": 4519,
+   "n_test": 9138,
+   "test_counts": {
+    "Analysis": 500,
+    "Backdoor": 500,
+    "Benign": 5000,
+    "DoS": 500,
+    "Exploits": 500,
+    "Fuzzers": 500,
+    "Generic": 500,
+    "Reconnaissance": 500,
+    "Shellcode": 500,
+    "Worms": 138
+   },
+   "removed": [],
+   "det": {
+    "XGBoost": {
+     "auroc": 0.31402498791686806,
+     "tpr_fpr1": 0.0014499758337361043,
+     "detection": 0.031899468342194294,
+     "test_fpr": 0.0388,
+     "per_class": {
+      "Analysis": 0.0,
+      "Backdoor": 0.01,
+      "DoS": 0.022,
+      "Exploits": 0.04,
+      "Fuzzers": 0.026,
+      "Generic": 0.046,
+      "Reconnaissance": 0.03,
+      "Shellcode": 0.09,
+      "Worms": 0.0
+     }
+    },
+    "LightGBM": {
+     "auroc": 0.17710188496858387,
+     "tpr_fpr1": 0.017399710004833254,
+     "detection": 0.03987433542774287,
+     "test_fpr": 0.1428,
+     "per_class": {
+      "Analysis": 0.0,
+      "Backdoor": 0.028,
+      "DoS": 0.04,
+      "Exploits": 0.046,
+      "Fuzzers": 0.058,
+      "Generic": 0.066,
+      "Reconnaissance": 0.048,
+      "Shellcode": 0.044,
+      "Worms": 0.0
+     }
+    },
+    "DNN": {
+     "auroc": 0.22159944417593042,
+     "tpr_fpr1": 0.0004931890590939131,
+     "detection": 0.3180280328661189,
+     "test_fpr": 0.5524,
+     "per_class": {
+      "Analysis": 0.986,
+      "Backdoor": 0.16,
+      "DoS": 0.29,
+      "Exploits": 0.228,
+      "Fuzzers": 0.096,
+      "Generic": 0.3,
+      "Reconnaissance": 0.116,
+      "Shellcode": 0.344,
+      "Worms": 0.4057971014492754
+     }
+    },
+    "ResSE-CNN1D": {
+     "auroc": 0.15996060898985018,
+     "tpr_fpr1": 0.0022992473934958227,
+     "detection": 0.6778637022716288,
+     "test_fpr": 0.9524,
+     "per_class": {
+      "Analysis": 0.012,
+      "Backdoor": 0.846,
+      "DoS": 0.574,
+      "Exploits": 0.748,
+      "Fuzzers": 0.718,
+      "Generic": 0.72,
+      "Reconnaissance": 0.842,
+      "Shellcode": 0.896,
+      "Worms": 0.9202898550724637
+     }
+    },
+    "B-ProtoMeta": {
+     "auroc": 0.1884009908168197,
+     "tpr_fpr1": 0.0009666505558240696,
+     "detection": 0.26413726437892704,
+     "test_fpr": 0.6954,
+     "per_class": {
+      "Analysis": 0.896,
+      "Backdoor": 0.108,
+      "DoS": 0.26,
+      "Exploits": 0.216,
+      "Fuzzers": 0.03,
+      "Generic": 0.232,
+      "Reconnaissance": 0.114,
+      "Shellcode": 0.32,
+      "Worms": 0.036231884057971016
+     }
+    },
+    "CZT-Hybrid": {
+     "auroc": 0.05146984050265828,
+     "tpr_fpr1": 0.0016916384726921219,
+     "detection": 0.3484775253745771,
+     "test_fpr": 0.9764,
+     "per_class": {
+      "Analysis": 0.034,
+      "Backdoor": 0.398,
+      "DoS": 0.372,
+      "Exploits": 0.508,
+      "Fuzzers": 0.234,
+      "Generic": 0.454,
+      "Reconnaissance": 0.226,
+      "Shellcode": 0.594,
+      "Worms": 0.2318840579710145
+     }
+    },
+    "CLAD": {
+     "auroc": 0.09101696471725469,
+     "tpr_fpr1": 0.007249879168680522,
+     "detection": 0.3859352344127598,
+     "test_fpr": 0.9878,
+     "per_class": {
+      "Analysis": 0.944,
+      "Backdoor": 0.226,
+      "DoS": 0.398,
+      "Exploits": 0.34,
+      "Fuzzers": 0.092,
+      "Generic": 0.392,
+      "Reconnaissance": 0.134,
+      "Shellcode": 0.6,
+      "Worms": 0.2463768115942029
+     }
+    }
+   },
+   "time_s": 400.23350405693054
+  },
+  {
+   "kind": "cross",
+   "source": "CIC",
+   "target": "UNSW",
+   "variant": "nottl",
+   "seed": 1,
+   "n_train": 27206,
+   "n_val": 4519,
+   "n_test": 9138,
+   "test_counts": {
+    "Analysis": 500,
+    "Backdoor": 500,
+    "Benign": 5000,
+    "DoS": 500,
+    "Exploits": 500,
+    "Fuzzers": 500,
+    "Generic": 500,
+    "Reconnaissance": 500,
+    "Shellcode": 500,
+    "Worms": 138
+   },
+   "removed": [
+    "MIN_TTL",
+    "MAX_TTL",
+    "DNS_TTL_ANSWER"
+   ],
+   "det": {
+    "XGBoost": {
+     "auroc": 0.2749852102464959,
+     "tpr_fpr1": 0.0021749637506041568,
+     "detection": 0.029966167230546157,
+     "test_fpr": 0.033,
+     "per_class": {
+      "Analysis": 0.0,
+      "Backdoor": 0.028,
+      "DoS": 0.032,
+      "Exploits": 0.046,
+      "Fuzzers": 0.048,
+      "Generic": 0.036,
+      "Reconnaissance": 0.028,
+      "Shellcode": 0.03,
+      "Worms": 0.0
+     }
+    },
+    "LightGBM": {
+     "auroc": 0.18087124214596423,
+     "tpr_fpr1": 0.016191396810053167,
+     "detection": 0.024649589173513776,
+     "test_fpr": 0.0308,
+     "per_class": {
+      "Analysis": 0.0,
+      "Backdoor": 0.026,
+      "DoS": 0.03,
+      "Exploits": 0.042,
+      "Fuzzers": 0.032,
+      "Generic": 0.036,
+      "Reconnaissance": 0.024,
+      "Shellcode": 0.014,
+      "Worms": 0.0
+     }
+    },
+    "DNN": {
+     "auroc": 0.3206996133397777,
+     "tpr_fpr1": 0.00014557990298555266,
+     "detection": 0.28709521507974867,
+     "test_fpr": 0.5688,
+     "per_class": {
+      "Analysis": 0.012,
+      "Backdoor": 0.216,
+      "DoS": 0.262,
+      "Exploits": 0.284,
+      "Fuzzers": 0.15,
+      "Generic": 0.362,
+      "Reconnaissance": 0.19,
+      "Shellcode": 0.692,
+      "Worms": 0.7536231884057971
+     }
+    },
+    "ResSE-CNN1D": {
+     "auroc": 0.23488262445625901,
+     "tpr_fpr1": 0.0004833252779120348,
+     "detection": 0.3501691638472692,
+     "test_fpr": 0.7176,
+     "per_class": {
+      "Analysis": 0.044,
+      "Backdoor": 0.32,
+      "DoS": 0.354,
+      "Exploits": 0.422,
+      "Fuzzers": 0.242,
+      "Generic": 0.488,
+      "Reconnaissance": 0.214,
+      "Shellcode": 0.586,
+      "Worms": 0.8260869565217391
+     }
+    },
+    "B-ProtoMeta": {
+     "auroc": 0.45759482841952637,
+     "tpr_fpr1": 0.0055582406959884005,
+     "detection": 0.17858869018849685,
+     "test_fpr": 0.2538,
+     "per_class": {
+      "Analysis": 0.0,
+      "Backdoor": 0.11,
+      "DoS": 0.17,
+      "Exploits": 0.146,
+      "Fuzzers": 0.132,
+      "Generic": 0.26,
+      "Reconnaissance": 0.174,
+      "Shellcode": 0.368,
+      "Worms": 0.427536231884058
+     }
+    },
+    "CZT-Hybrid": {
+     "auroc": 0.15678975350410826,
+     "tpr_fpr1": 0.0014499758337361043,
+     "detection": 0.16553890768487192,
+     "test_fpr": 0.6536,
+     "per_class": {
+      "Analysis": 0.0,
+      "Backdoor": 0.086,
+      "DoS": 0.19,
+      "Exploits": 0.146,
+      "Fuzzers": 0.118,
+      "Generic": 0.268,
+      "Reconnaissance": 0.164,
+      "Shellcode": 0.356,
+      "Worms": 0.15217391304347827
+     }
+    },
+    "CLAD": {
+     "auroc": 0.43977699371677137,
+     "tpr_fpr1": 0.06500724987916869,
+     "detection": 0.5328661188980184,
+     "test_fpr": 0.611,
+     "per_class": {
+      "Analysis": 0.032,
+      "Backdoor": 0.444,
+      "DoS": 0.536,
+      "Exploits": 0.448,
+      "Fuzzers": 0.514,
+      "Generic": 0.586,
+      "Reconnaissance": 0.732,
+      "Shellcode": 0.896,
+      "Worms": 0.8043478260869565
+     }
+    }
+   },
+   "time_s": 398.53031516075134
+  },
+  {
+   "kind": "cross",
+   "source": "CIC",
+   "target": "UNSW",
+   "variant": "nottl",
+   "seed": 0,
+   "n_train": 27206,
+   "n_val": 4519,
+   "n_test": 9138,
+   "test_counts": {
+    "Analysis": 500,
+    "Backdoor": 500,
+    "Benign": 5000,
+    "DoS": 500,
+    "Exploits": 500,
+    "Fuzzers": 500,
+    "Generic": 500,
+    "Reconnaissance": 500,
+    "Shellcode": 500,
+    "Worms": 138
+   },
+   "removed": [
+    "MIN_TTL",
+    "MAX_TTL",
+    "DNS_TTL_ANSWER"
+   ],
+   "det": {
+    "XGBoost": {
+     "auroc": 0.21332537457709036,
+     "tpr_fpr1": 0.020541324311261478,
+     "detection": 0.026341227646205896,
+     "test_fpr": 0.061,
+     "per_class": {
+      "Analysis": 0.0,
+      "Backdoor": 0.026,
+      "DoS": 0.028,
+      "Exploits": 0.036,
+      "Fuzzers": 0.038,
+      "Generic": 0.044,
+      "Reconnaissance": 0.024,
+      "Shellcode": 0.022,
+      "Worms": 0.0
+     }
+    },
+    "LightGBM": {
+     "auroc": 0.09024146930884486,
+     "tpr_fpr1": 0.01014983083615273,
+     "detection": 0.04204929917834703,
+     "test_fpr": 0.4016,
+     "per_class": {
+      "Analysis": 0.0,
+      "Backdoor": 0.028,
+      "DoS": 0.04,
+      "Exploits": 0.04,
+      "Fuzzers": 0.078,
+      "Generic": 0.054,
+      "Reconnaissance": 0.056,
+      "Shellcode": 0.05,
+      "Worms": 0.007246376811594203
+     }
+    },
+    "DNN": {
+     "auroc": 0.30305140164330596,
+     "tpr_fpr1": 4.109908825782609e-05,
+     "detection": 0.4929917834702755,
+     "test_fpr": 0.684,
+     "per_class": {
+      "Analysis": 0.53,
+      "Backdoor": 0.362,
+      "DoS": 0.462,
+      "Exploits": 0.336,
+      "Fuzzers": 0.442,
+      "Generic": 0.404,
+      "Reconnaissance": 0.556,
+      "Shellcode": 0.784,
+      "Worms": 0.7391304347826086
+     }
+    },
+    "ResSE-CNN1D": {
+     "auroc": 0.4258547849202513,
+     "tpr_fpr1": 0.0016916384726921219,
+     "detection": 0.541082648622523,
+     "test_fpr": 0.6024,
+     "per_class": {
+      "Analysis": 0.548,
+      "Backdoor": 0.476,
+      "DoS": 0.46,
+      "Exploits": 0.454,
+      "Fuzzers": 0.49,
+      "Generic": 0.524,
+      "Reconnaissance": 0.594,
+      "Shellcode": 0.74,
+      "Worms": 0.6956521739130435
+     }
+    },
+    "B-ProtoMeta": {
+     "auroc": 0.4336101256645723,
+     "tpr_fpr1": 0.0019333011116481392,
+     "detection": 0.2068632189463509,
+     "test_fpr": 0.403,
+     "per_class": {
+      "Analysis": 0.116,
+      "Backdoor": 0.114,
+      "DoS": 0.23,
+      "Exploits": 0.224,
+      "Fuzzers": 0.15,
+      "Generic": 0.292,
+      "Reconnaissance": 0.152,
+      "Shellcode": 0.33,
+      "Worms": 0.37681159420289856
+     }
+    },
+    "CZT-Hybrid": {
+     "auroc": 0.15754639922667954,
+     "tpr_fpr1": 0.0043499275012083135,
+     "detection": 0.21193813436442727,
+     "test_fpr": 0.7954,
+     "per_class": {
+      "Analysis": 0.006,
+      "Backdoor": 0.148,
+      "DoS": 0.186,
+      "Exploits": 0.236,
+      "Fuzzers": 0.216,
+      "Generic": 0.302,
+      "Reconnaissance": 0.242,
+      "Shellcode": 0.372,
+      "Worms": 0.16666666666666666
+     }
+    },
+    "CLAD": {
+     "auroc": 0.392896302561624,
+     "tpr_fpr1": 0.0,
+     "detection": 0.6655389076848719,
+     "test_fpr": 0.8396,
+     "per_class": {
+      "Analysis": 0.72,
+      "Backdoor": 0.592,
+      "DoS": 0.564,
+      "Exploits": 0.458,
+      "Fuzzers": 0.708,
+      "Generic": 0.49,
+      "Reconnaissance": 0.838,
+      "Shellcode": 0.916,
+      "Worms": 0.8043478260869565
+     }
+    }
+   },
+   "time_s": 418.0099952220917
+  },
+  {
+   "kind": "cross",
+   "source": "CIC",
+   "target": "UNSW",
+   "variant": "filtered",
+   "seed": 0,
+   "n_train": 27206,
+   "n_val": 4519,
+   "n_test": 9138,
+   "test_counts": {
+    "Analysis": 500,
+    "Backdoor": 500,
+    "Benign": 5000,
+    "DoS": 500,
+    "Exploits": 500,
+    "Fuzzers": 500,
+    "Generic": 500,
+    "Reconnaissance": 500,
+    "Shellcode": 500,
+    "Worms": 138
+   },
+   "removed": [],
+   "det": {
+    "XGBoost": {
+     "auroc": 0.15058946350894153,
+     "tpr_fpr1": 0.02247462542290962,
+     "detection": 0.06452392460125665,
+     "test_fpr": 0.308,
+     "per_class": {
+      "Analysis": 0.0,
+      "Backdoor": 0.028,
+      "DoS": 0.054,
+      "Exploits": 0.05,
+      "Fuzzers": 0.082,
+      "Generic": 0.108,
+      "Reconnaissance": 0.092,
+      "Shellcode": 0.12,
+      "Worms": 0.0
+     }
+    },
+    "LightGBM": {
+     "auroc": 0.12897158047365878,
+     "tpr_fpr1": 0.017158047365877234,
+     "detection": 0.05268245529241179,
+     "test_fpr": 0.3804,
+     "per_class": {
+      "Analysis": 0.0,
+      "Backdoor": 0.028,
+      "DoS": 0.04,
+      "Exploits": 0.048,
+      "Fuzzers": 0.084,
+      "Generic": 0.09,
+      "Reconnaissance": 0.072,
+      "Shellcode": 0.07,
+      "Worms": 0.014492753623188406
+     }
+    },
+    "DNN": {
+     "auroc": 0.27038849685838573,
+     "tpr_fpr1": 0.0026582890285161915,
+     "detection": 0.22692121797970033,
+     "test_fpr": 0.2962,
+     "per_class": {
+      "Analysis": 0.73,
+      "Backdoor": 0.064,
+      "DoS": 0.234,
+      "Exploits": 0.136,
+      "Fuzzers": 0.03,
+      "Generic": 0.238,
+      "Reconnaissance": 0.14,
+      "Shellcode": 0.282,
+      "Worms": 0.08695652173913043
+     }
+    },
+    "ResSE-CNN1D": {
+     "auroc": 0.45181735137747703,
+     "tpr_fpr1": 0.00459159014016433,
+     "detection": 0.4828419526341228,
+     "test_fpr": 0.4372,
+     "per_class": {
+      "Analysis": 0.99,
+      "Backdoor": 0.332,
+      "DoS": 0.394,
+      "Exploits": 0.44,
+      "Fuzzers": 0.274,
+      "Generic": 0.424,
+      "Reconnaissance": 0.36,
+      "Shellcode": 0.562,
+      "Worms": 0.7971014492753623
+     }
+    },
+    "B-ProtoMeta": {
+     "auroc": 0.14373757854035765,
+     "tpr_fpr1": 0.0004833252779120348,
+     "detection": 0.11672305461575641,
+     "test_fpr": 0.4908,
+     "per_class": {
+      "Analysis": 0.056,
+      "Backdoor": 0.044,
+      "DoS": 0.144,
+      "Exploits": 0.08,
+      "Fuzzers": 0.02,
+      "Generic": 0.256,
+      "Reconnaissance": 0.104,
+      "Shellcode": 0.258,
+      "Worms": 0.014492753623188406
+     }
+    },
+    "CZT-Hybrid": {
+     "auroc": 0.1462202996616723,
+     "tpr_fpr1": 0.0009666505558240696,
+     "detection": 0.19913001449975834,
+     "test_fpr": 0.7632,
+     "per_class": {
+      "Analysis": 0.324,
+      "Backdoor": 0.078,
+      "DoS": 0.208,
+      "Exploits": 0.178,
+      "Fuzzers": 0.13,
+      "Generic": 0.274,
+      "Reconnaissance": 0.156,
+      "Shellcode": 0.284,
+      "Worms": 0.057971014492753624
+     }
+    },
+    "CLAD": {
+     "auroc": 0.44777153214113097,
+     "tpr_fpr1": 0.006283228612856452,
+     "detection": 0.5019333011116481,
+     "test_fpr": 0.4014,
+     "per_class": {
+      "Analysis": 0.004,
+      "Backdoor": 0.416,
+      "DoS": 0.484,
+      "Exploits": 0.344,
+      "Fuzzers": 0.528,
+      "Generic": 0.478,
+      "Reconnaissance": 0.774,
+      "Shellcode": 0.93,
+      "Worms": 0.7101449275362319
+     }
+    }
+   },
+   "time_s": 391.80510783195496
+  },
+  {
+   "kind": "cross",
+   "source": "CIC",
+   "target": "UNSW",
+   "variant": "filtered",
+   "seed": 2,
+   "n_train": 27206,
+   "n_val": 4519,
+   "n_test": 9138,
+   "test_counts": {
+    "Analysis": 500,
+    "Backdoor": 500,
+    "Benign": 5000,
+    "DoS": 500,
+    "Exploits": 500,
+    "Fuzzers": 500,
+    "Generic": 500,
+    "Reconnaissance": 500,
+    "Shellcode": 500,
+    "Worms": 138
+   },
+   "removed": [],
+   "det": {
+    "XGBoost": {
+     "auroc": 0.31607730787820204,
+     "tpr_fpr1": 0.017883035282745288,
+     "detection": 0.06621556307394877,
+     "test_fpr": 0.0614,
+     "per_class": {
+      "Analysis": 0.0,
+      "Backdoor": 0.036,
+      "DoS": 0.058,
+      "Exploits": 0.048,
+      "Fuzzers": 0.088,
+      "Generic": 0.092,
+      "Reconnaissance": 0.088,
+      "Shellcode": 0.138,
+      "Worms": 0.0
+     }
+    },
+    "LightGBM": {
+     "auroc": 0.39886297728371195,
+     "tpr_fpr1": 0.040357660705654906,
+     "detection": 0.05292411793136781,
+     "test_fpr": 0.018,
+     "per_class": {
+      "Analysis": 0.0,
+      "Backdoor": 0.034,
+      "DoS": 0.056,
+      "Exploits": 0.038,
+      "Fuzzers": 0.09,
+      "Generic": 0.08,
+      "Reconnaissance": 0.07,
+      "Shellcode": 0.068,
+      "Worms": 0.007246376811594203
+     }
+    },
+    "DNN": {
+     "auroc": 0.30261234896085065,
+     "tpr_fpr1": 0.0,
+     "detection": 0.24045432576123732,
+     "test_fpr": 0.5996,
+     "per_class": {
+      "Analysis": 0.178,
+      "Backdoor": 0.146,
+      "DoS": 0.274,
+      "Exploits": 0.238,
+      "Fuzzers": 0.078,
+      "Generic": 0.268,
+      "Reconnaissance": 0.146,
+      "Shellcode": 0.66,
+      "Worms": 0.007246376811594203
+     }
+    },
+    "ResSE-CNN1D": {
+     "auroc": 0.5295333736104398,
+     "tpr_fpr1": 0.022232962783953602,
+     "detection": 0.5343160947317545,
+     "test_fpr": 0.4506,
+     "per_class": {
+      "Analysis": 0.032,
+      "Backdoor": 0.59,
+      "DoS": 0.49,
+      "Exploits": 0.542,
+      "Fuzzers": 0.484,
+      "Generic": 0.464,
+      "Reconnaissance": 0.776,
+      "Shellcode": 0.824,
+      "Worms": 0.7971014492753623
+     }
+    },
+    "B-ProtoMeta": {
+     "auroc": 0.47261452392460124,
+     "tpr_fpr1": 0.003624939584340261,
+     "detection": 0.24818753020782988,
+     "test_fpr": 0.3336,
+     "per_class": {
+      "Analysis": 0.786,
+      "Backdoor": 0.068,
+      "DoS": 0.228,
+      "Exploits": 0.188,
+      "Fuzzers": 0.05,
+      "Generic": 0.25,
+      "Reconnaissance": 0.124,
+      "Shellcode": 0.31,
+      "Worms": 0.18115942028985507
+     }
+    },
+    "CZT-Hybrid": {
+     "auroc": 0.4728944900918318,
+     "tpr_fpr1": 0.014258095698405027,
+     "detection": 0.35862735621072983,
+     "test_fpr": 0.4594,
+     "per_class": {
+      "Analysis": 0.556,
+      "Backdoor": 0.2,
+      "DoS": 0.316,
+      "Exploits": 0.314,
+      "Fuzzers": 0.188,
+      "Generic": 0.376,
+      "Reconnaissance": 0.274,
+      "Shellcode": 0.528,
+      "Worms": 0.782608695652174
+     }
+    },
+    "CLAD": {
+     "auroc": 0.4850094006766554,
+     "tpr_fpr1": 0.039149347510874816,
+     "detection": 0.5606573223779604,
+     "test_fpr": 0.5896,
+     "per_class": {
+      "Analysis": 0.994,
+      "Backdoor": 0.362,
+      "DoS": 0.544,
+      "Exploits": 0.44,
+      "Fuzzers": 0.368,
+      "Generic": 0.616,
+      "Reconnaissance": 0.332,
+      "Shellcode": 0.77,
+      "Worms": 0.7753623188405797
+     }
+    }
+   },
+   "time_s": 282.087317943573
+  },
+  {
+   "kind": "within",
+   "source": "UNSW",
+   "target": "UNSW",
+   "variant": "full",
+   "seed": 1,
+   "n_train": 24284,
+   "n_val": 4048,
+   "n_test": 8000,
+   "test_counts": {
+    "Backdoor": 500,
+    "Benign": 5000,
+    "DoS": 500,
+    "Exploits": 500,
+    "Fuzzers": 500,
+    "Generic": 500,
+    "Reconnaissance": 500
+   },
+   "removed": [],
+   "det": {
+    "XGBoost": {
+     "auroc": 0.9998614,
+     "tpr_fpr1": 1.0,
+     "detection": 1.0,
+     "test_fpr": 0.0108,
+     "per_class": {
+      "Backdoor": 1.0,
+      "DoS": 1.0,
+      "Exploits": 1.0,
+      "Fuzzers": 1.0,
+      "Generic": 1.0,
+      "Reconnaissance": 1.0
+     }
+    },
+    "LightGBM": {
+     "auroc": 0.9999241999999999,
+     "tpr_fpr1": 1.0,
+     "detection": 1.0,
+     "test_fpr": 0.0098,
+     "per_class": {
+      "Backdoor": 1.0,
+      "DoS": 1.0,
+      "Exploits": 1.0,
+      "Fuzzers": 1.0,
+      "Generic": 1.0,
+      "Reconnaissance": 1.0
+     }
+    },
+    "DNN": {
+     "auroc": 0.9994110333333334,
+     "tpr_fpr1": 1.0,
+     "detection": 1.0,
+     "test_fpr": 0.0108,
+     "per_class": {
+      "Backdoor": 1.0,
+      "DoS": 1.0,
+      "Exploits": 1.0,
+      "Fuzzers": 1.0,
+      "Generic": 1.0,
+      "Reconnaissance": 1.0
+     }
+    },
+    "ResSE-CNN1D": {
+     "auroc": 0.9993653666666666,
+     "tpr_fpr1": 1.0,
+     "detection": 1.0,
+     "test_fpr": 0.0072,
+     "per_class": {
+      "Backdoor": 1.0,
+      "DoS": 1.0,
+      "Exploits": 1.0,
+      "Fuzzers": 1.0,
+      "Generic": 1.0,
+      "Reconnaissance": 1.0
+     }
+    },
+    "B-ProtoMeta": {
+     "auroc": 0.9998099666666668,
+     "tpr_fpr1": 1.0,
+     "detection": 1.0,
+     "test_fpr": 0.0064,
+     "per_class": {
+      "Backdoor": 1.0,
+      "DoS": 1.0,
+      "Exploits": 1.0,
+      "Fuzzers": 1.0,
+      "Generic": 1.0,
+      "Reconnaissance": 1.0
+     }
+    },
+    "CZT-Hybrid": {
+     "auroc": 0.9998098000000001,
+     "tpr_fpr1": 1.0,
+     "detection": 1.0,
+     "test_fpr": 0.007,
+     "per_class": {
+      "Backdoor": 1.0,
+      "DoS": 1.0,
+      "Exploits": 1.0,
+      "Fuzzers": 1.0,
+      "Generic": 1.0,
+      "Reconnaissance": 1.0
+     }
+    },
+    "CLAD": {
+     "auroc": 0.9997081,
+     "tpr_fpr1": 1.0,
+     "detection": 1.0,
+     "test_fpr": 0.0088,
+     "per_class": {
+      "Backdoor": 1.0,
+      "DoS": 1.0,
+      "Exploits": 1.0,
+      "Fuzzers": 1.0,
+      "Generic": 1.0,
+      "Reconnaissance": 1.0
+     }
+    }
+   },
+   "time_s": 199.69094800949097
+  },
+  {
+   "kind": "within",
+   "source": "UNSW",
+   "target": "UNSW",
+   "variant": "full",
+   "seed": 0,
+   "n_train": 24284,
+   "n_val": 4048,
+   "n_test": 8000,
+   "test_counts": {
+    "Backdoor": 500,
+    "Benign": 5000,
+    "DoS": 500,
+    "Exploits": 500,
+    "Fuzzers": 500,
+    "Generic": 500,
+    "Reconnaissance": 500
+   },
+   "removed": [],
+   "det": {
+    "XGBoost": {
+     "auroc": 0.9999999333333334,
+     "tpr_fpr1": 1.0,
+     "detection": 1.0,
+     "test_fpr": 0.008,
+     "per_class": {
+      "Backdoor": 1.0,
+      "DoS": 1.0,
+      "Exploits": 1.0,
+      "Fuzzers": 1.0,
+      "Generic": 1.0,
+      "Reconnaissance": 1.0
+     }
+    },
+    "LightGBM": {
+     "auroc": 1.0,
+     "tpr_fpr1": 1.0,
+     "detection": 1.0,
+     "test_fpr": 0.0092,
+     "per_class": {
+      "Backdoor": 1.0,
+      "DoS": 1.0,
+      "Exploits": 1.0,
+      "Fuzzers": 1.0,
+      "Generic": 1.0,
+      "Reconnaissance": 1.0
+     }
+    },
+    "DNN": {
+     "auroc": 0.9999998666666666,
+     "tpr_fpr1": 1.0,
+     "detection": 1.0,
+     "test_fpr": 0.009,
+     "per_class": {
+      "Backdoor": 1.0,
+      "DoS": 1.0,
+      "Exploits": 1.0,
+      "Fuzzers": 1.0,
+      "Generic": 1.0,
+      "Reconnaissance": 1.0
+     }
+    },
+    "ResSE-CNN1D": {
+     "auroc": 0.99999,
+     "tpr_fpr1": 1.0,
+     "detection": 1.0,
+     "test_fpr": 0.0092,
+     "per_class": {
+      "Backdoor": 1.0,
+      "DoS": 1.0,
+      "Exploits": 1.0,
+      "Fuzzers": 1.0,
+      "Generic": 1.0,
+      "Reconnaissance": 1.0
+     }
+    },
+    "B-ProtoMeta": {
+     "auroc": 0.9999575333333334,
+     "tpr_fpr1": 1.0,
+     "detection": 1.0,
+     "test_fpr": 0.0094,
+     "per_class": {
+      "Backdoor": 1.0,
+      "DoS": 1.0,
+      "Exploits": 1.0,
+      "Fuzzers": 1.0,
+      "Generic": 1.0,
+      "Reconnaissance": 1.0
+     }
+    },
+    "CZT-Hybrid": {
+     "auroc": 0.9999998,
+     "tpr_fpr1": 1.0,
+     "detection": 1.0,
+     "test_fpr": 0.0136,
+     "per_class": {
+      "Backdoor": 1.0,
+      "DoS": 1.0,
+      "Exploits": 1.0,
+      "Fuzzers": 1.0,
+      "Generic": 1.0,
+      "Reconnaissance": 1.0
+     }
+    },
+    "CLAD": {
+     "auroc": 1.0,
+     "tpr_fpr1": 1.0,
+     "detection": 1.0,
+     "test_fpr": 0.0114,
+     "per_class": {
+      "Backdoor": 1.0,
+      "DoS": 1.0,
+      "Exploits": 1.0,
+      "Fuzzers": 1.0,
+      "Generic": 1.0,
+      "Reconnaissance": 1.0
+     }
+    }
+   },
+   "time_s": 261.7818398475647
+  },
+  {
+   "kind": "within",
+   "source": "UNSW",
+   "target": "UNSW",
+   "variant": "full",
+   "seed": 2,
+   "n_train": 24284,
+   "n_val": 4048,
+   "n_test": 8000,
+   "test_counts": {
+    "Backdoor": 500,
+    "Benign": 5000,
+    "DoS": 500,
+    "Exploits": 500,
+    "Fuzzers": 500,
+    "Generic": 500,
+    "Reconnaissance": 500
+   },
+   "removed": [],
+   "det": {
+    "XGBoost": {
+     "auroc": 0.9999914666666667,
+     "tpr_fpr1": 1.0,
+     "detection": 1.0,
+     "test_fpr": 0.0082,
+     "per_class": {
+      "Backdoor": 1.0,
+      "DoS": 1.0,
+      "Exploits": 1.0,
+      "Fuzzers": 1.0,
+      "Generic": 1.0,
+      "Reconnaissance": 1.0
+     }
+    },
+    "LightGBM": {
+     "auroc": 0.9999944000000001,
+     "tpr_fpr1": 1.0,
+     "detection": 1.0,
+     "test_fpr": 0.008,
+     "per_class": {
+      "Backdoor": 1.0,
+      "DoS": 1.0,
+      "Exploits": 1.0,
+      "Fuzzers": 1.0,
+      "Generic": 1.0,
+      "Reconnaissance": 1.0
+     }
+    },
+    "DNN": {
+     "auroc": 0.9986709666666668,
+     "tpr_fpr1": 1.0,
+     "detection": 1.0,
+     "test_fpr": 0.0108,
+     "per_class": {
+      "Backdoor": 1.0,
+      "DoS": 1.0,
+      "Exploits": 1.0,
+      "Fuzzers": 1.0,
+      "Generic": 1.0,
+      "Reconnaissance": 1.0
+     }
+    },
+    "ResSE-CNN1D": {
+     "auroc": 0.9991225333333332,
+     "tpr_fpr1": 1.0,
+     "detection": 1.0,
+     "test_fpr": 0.008,
+     "per_class": {
+      "Backdoor": 1.0,
+      "DoS": 1.0,
+      "Exploits": 1.0,
+      "Fuzzers": 1.0,
+      "Generic": 1.0,
+      "Reconnaissance": 1.0
+     }
+    },
+    "B-ProtoMeta": {
+     "auroc": 0.9996133666666667,
+     "tpr_fpr1": 1.0,
+     "detection": 1.0,
+     "test_fpr": 0.008,
+     "per_class": {
+      "Backdoor": 1.0,
+      "DoS": 1.0,
+      "Exploits": 1.0,
+      "Fuzzers": 1.0,
+      "Generic": 1.0,
+      "Reconnaissance": 1.0
+     }
+    },
+    "CZT-Hybrid": {
+     "auroc": 0.9998532666666667,
+     "tpr_fpr1": 1.0,
+     "detection": 1.0,
+     "test_fpr": 0.0112,
+     "per_class": {
+      "Backdoor": 1.0,
+      "DoS": 1.0,
+      "Exploits": 1.0,
+      "Fuzzers": 1.0,
+      "Generic": 1.0,
+      "Reconnaissance": 1.0
+     }
+    },
+    "CLAD": {
+     "auroc": 0.9997857333333333,
+     "tpr_fpr1": 1.0,
+     "detection": 1.0,
+     "test_fpr": 0.0092,
+     "per_class": {
+      "Backdoor": 1.0,
+      "DoS": 1.0,
+      "Exploits": 1.0,
+      "Fuzzers": 1.0,
+      "Generic": 1.0,
+      "Reconnaissance": 1.0
+     }
+    }
+   },
+   "time_s": 254.07475090026855
+  },
+  {
+   "kind": "cross",
+   "source": "CIC",
+   "target": "UNSW",
+   "variant": "filtered",
+   "seed": 1,
+   "n_train": 27206,
+   "n_val": 4519,
+   "n_test": 9138,
+   "test_counts": {
+    "Analysis": 500,
+    "Backdoor": 500,
+    "Benign": 5000,
+    "DoS": 500,
+    "Exploits": 500,
+    "Fuzzers": 500,
+    "Generic": 500,
+    "Reconnaissance": 500,
+    "Shellcode": 500,
+    "Worms": 138
+   },
+   "removed": [],
+   "det": {
+    "XGBoost": {
+     "auroc": 0.31402498791686806,
+     "tpr_fpr1": 0.0014499758337361043,
+     "detection": 0.031899468342194294,
+     "test_fpr": 0.0388,
+     "per_class": {
+      "Analysis": 0.0,
+      "Backdoor": 0.01,
+      "DoS": 0.022,
+      "Exploits": 0.04,
+      "Fuzzers": 0.026,
+      "Generic": 0.046,
+      "Reconnaissance": 0.03,
+      "Shellcode": 0.09,
+      "Worms": 0.0
+     }
+    },
+    "LightGBM": {
+     "auroc": 0.17710188496858387,
+     "tpr_fpr1": 0.017399710004833254,
+     "detection": 0.03987433542774287,
+     "test_fpr": 0.1428,
+     "per_class": {
+      "Analysis": 0.0,
+      "Backdoor": 0.028,
+      "DoS": 0.04,
+      "Exploits": 0.046,
+      "Fuzzers": 0.058,
+      "Generic": 0.066,
+      "Reconnaissance": 0.048,
+      "Shellcode": 0.044,
+      "Worms": 0.0
+     }
+    },
+    "DNN": {
+     "auroc": 0.22159944417593042,
+     "tpr_fpr1": 0.0004931890590939131,
+     "detection": 0.3180280328661189,
+     "test_fpr": 0.5524,
+     "per_class": {
+      "Analysis": 0.986,
+      "Backdoor": 0.16,
+      "DoS": 0.29,
+      "Exploits": 0.228,
+      "Fuzzers": 0.096,
+      "Generic": 0.3,
+      "Reconnaissance": 0.116,
+      "Shellcode": 0.344,
+      "Worms": 0.4057971014492754
+     }
+    },
+    "ResSE-CNN1D": {
+     "auroc": 0.15996060898985018,
+     "tpr_fpr1": 0.0022992473934958227,
+     "detection": 0.6778637022716288,
+     "test_fpr": 0.9524,
+     "per_class": {
+      "Analysis": 0.012,
+      "Backdoor": 0.846,
+      "DoS": 0.574,
+      "Exploits": 0.748,
+      "Fuzzers": 0.718,
+      "Generic": 0.72,
+      "Reconnaissance": 0.842,
+      "Shellcode": 0.896,
+      "Worms": 0.9202898550724637
+     }
+    },
+    "B-ProtoMeta": {
+     "auroc": 0.1884009908168197,
+     "tpr_fpr1": 0.0009666505558240696,
+     "detection": 0.26413726437892704,
+     "test_fpr": 0.6954,
+     "per_class": {
+      "Analysis": 0.896,
+      "Backdoor": 0.108,
+      "DoS": 0.26,
+      "Exploits": 0.216,
+      "Fuzzers": 0.03,
+      "Generic": 0.232,
+      "Reconnaissance": 0.114,
+      "Shellcode": 0.32,
+      "Worms": 0.036231884057971016
+     }
+    },
+    "CZT-Hybrid": {
+     "auroc": 0.05146984050265828,
+     "tpr_fpr1": 0.0016916384726921219,
+     "detection": 0.3484775253745771,
+     "test_fpr": 0.9764,
+     "per_class": {
+      "Analysis": 0.034,
+      "Backdoor": 0.398,
+      "DoS": 0.372,
+      "Exploits": 0.508,
+      "Fuzzers": 0.234,
+      "Generic": 0.454,
+      "Reconnaissance": 0.226,
+      "Shellcode": 0.594,
+      "Worms": 0.2318840579710145
+     }
+    },
+    "CLAD": {
+     "auroc": 0.09101696471725469,
+     "tpr_fpr1": 0.007249879168680522,
+     "detection": 0.3859352344127598,
+     "test_fpr": 0.9878,
+     "per_class": {
+      "Analysis": 0.944,
+      "Backdoor": 0.226,
+      "DoS": 0.398,
+      "Exploits": 0.34,
+      "Fuzzers": 0.092,
+      "Generic": 0.392,
+      "Reconnaissance": 0.134,
+      "Shellcode": 0.6,
+      "Worms": 0.2463768115942029
+     }
+    }
+   },
+   "time_s": 431.5756690502167
+  },
+  {
+   "kind": "within",
+   "source": "CIC",
+   "target": "CIC",
+   "variant": "full",
+   "seed": 2,
+   "n_train": 27206,
+   "n_val": 4519,
+   "n_test": 8500,
+   "test_counts": {
+    "Benign": 5000,
+    "DDOS_attack-HOIC": 500,
+    "DDoS_attacks-LOIC-HTTP": 500,
+    "DoS_attacks-GoldenEye": 500,
+    "DoS_attacks-Hulk": 500,
+    "DoS_attacks-Slowloris": 500,
+    "Infilteration": 500,
+    "SSH-Bruteforce": 500
+   },
+   "removed": [],
+   "det": {
+    "XGBoost": {
+     "auroc": 0.9805438285714286,
+     "tpr_fpr1": 0.9008571428571429,
+     "detection": 0.9008571428571429,
+     "test_fpr": 0.0102,
+     "per_class": {
+      "DDOS_attack-HOIC": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.306,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "LightGBM": {
+     "auroc": 0.9809464857142857,
+     "tpr_fpr1": 0.9011428571428571,
+     "detection": 0.9014285714285715,
+     "test_fpr": 0.011,
+     "per_class": {
+      "DDOS_attack-HOIC": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.31,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "DNN": {
+     "auroc": 0.9754529142857142,
+     "tpr_fpr1": 0.8917142857142857,
+     "detection": 0.8905714285714286,
+     "test_fpr": 0.0096,
+     "per_class": {
+      "DDOS_attack-HOIC": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.234,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "ResSE-CNN1D": {
+     "auroc": 0.9738633142857143,
+     "tpr_fpr1": 0.8897142857142857,
+     "detection": 0.8888571428571429,
+     "test_fpr": 0.0098,
+     "per_class": {
+      "DDOS_attack-HOIC": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.222,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "B-ProtoMeta": {
+     "auroc": 0.950563342857143,
+     "tpr_fpr1": 0.8534285714285714,
+     "detection": 0.8637142857142858,
+     "test_fpr": 0.0186,
+     "per_class": {
+      "DDOS_attack-HOIC": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.046,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "CZT-Hybrid": {
+     "auroc": 0.9778665714285714,
+     "tpr_fpr1": 0.8942857142857142,
+     "detection": 0.8957142857142857,
+     "test_fpr": 0.0114,
+     "per_class": {
+      "DDOS_attack-HOIC": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.27,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "CLAD": {
+     "auroc": 0.975176542857143,
+     "tpr_fpr1": 0.8968571428571429,
+     "detection": 0.8962857142857142,
+     "test_fpr": 0.0086,
+     "per_class": {
+      "DDOS_attack-HOIC": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.274,
+      "SSH-Bruteforce": 1.0
+     }
+    }
+   },
+   "time_s": 259.5471160411835
+  },
+  {
+   "kind": "within",
+   "source": "CIC",
+   "target": "CIC",
+   "variant": "full",
+   "seed": 0,
+   "n_train": 27206,
+   "n_val": 4519,
+   "n_test": 8500,
+   "test_counts": {
+    "Benign": 5000,
+    "DDOS_attack-HOIC": 500,
+    "DDoS_attacks-LOIC-HTTP": 500,
+    "DoS_attacks-GoldenEye": 500,
+    "DoS_attacks-Hulk": 500,
+    "DoS_attacks-Slowloris": 500,
+    "Infilteration": 500,
+    "SSH-Bruteforce": 500
+   },
+   "removed": [],
+   "det": {
+    "XGBoost": {
+     "auroc": 0.9794832285714286,
+     "tpr_fpr1": 0.902,
+     "detection": 0.904,
+     "test_fpr": 0.0122,
+     "per_class": {
+      "DDOS_attack-HOIC": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.328,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "LightGBM": {
+     "auroc": 0.9801070000000001,
+     "tpr_fpr1": 0.904,
+     "detection": 0.9082857142857143,
+     "test_fpr": 0.0152,
+     "per_class": {
+      "DDOS_attack-HOIC": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.358,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "DNN": {
+     "auroc": 0.975978457142857,
+     "tpr_fpr1": 0.8954285714285715,
+     "detection": 0.8934285714285715,
+     "test_fpr": 0.0086,
+     "per_class": {
+      "DDOS_attack-HOIC": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.254,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "ResSE-CNN1D": {
+     "auroc": 0.9745545714285714,
+     "tpr_fpr1": 0.8922857142857142,
+     "detection": 0.89,
+     "test_fpr": 0.0084,
+     "per_class": {
+      "DDOS_attack-HOIC": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.23,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "B-ProtoMeta": {
+     "auroc": 0.9538635142857144,
+     "tpr_fpr1": 0.8625714285714285,
+     "detection": 0.8625714285714285,
+     "test_fpr": 0.0092,
+     "per_class": {
+      "DDOS_attack-HOIC": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 0.988,
+      "Infilteration": 0.05,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "CZT-Hybrid": {
+     "auroc": 0.9766665714285715,
+     "tpr_fpr1": 0.896,
+     "detection": 0.894,
+     "test_fpr": 0.0078,
+     "per_class": {
+      "DDOS_attack-HOIC": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.258,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "CLAD": {
+     "auroc": 0.975841942857143,
+     "tpr_fpr1": 0.8962857142857142,
+     "detection": 0.8925714285714286,
+     "test_fpr": 0.008,
+     "per_class": {
+      "DDOS_attack-HOIC": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.248,
+      "SSH-Bruteforce": 1.0
+     }
+    }
+   },
+   "time_s": 349.5560739040375
+  },
+  {
+   "kind": "within",
+   "source": "CIC",
+   "target": "CIC",
+   "variant": "full",
+   "seed": 1,
+   "n_train": 27206,
+   "n_val": 4519,
+   "n_test": 8500,
+   "test_counts": {
+    "Benign": 5000,
+    "DDOS_attack-HOIC": 500,
+    "DDoS_attacks-LOIC-HTTP": 500,
+    "DoS_attacks-GoldenEye": 500,
+    "DoS_attacks-Hulk": 500,
+    "DoS_attacks-Slowloris": 500,
+    "Infilteration": 500,
+    "SSH-Bruteforce": 500
+   },
+   "removed": [],
+   "det": {
+    "XGBoost": {
+     "auroc": 0.9815878571428571,
+     "tpr_fpr1": 0.9022857142857142,
+     "detection": 0.8994285714285715,
+     "test_fpr": 0.006,
+     "per_class": {
+      "DDOS_attack-HOIC": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.296,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "LightGBM": {
+     "auroc": 0.9811991428571428,
+     "tpr_fpr1": 0.9022857142857142,
+     "detection": 0.9008571428571429,
+     "test_fpr": 0.0086,
+     "per_class": {
+      "DDOS_attack-HOIC": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.306,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "DNN": {
+     "auroc": 0.976522857142857,
+     "tpr_fpr1": 0.8948571428571429,
+     "detection": 0.8968571428571429,
+     "test_fpr": 0.015,
+     "per_class": {
+      "DDOS_attack-HOIC": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.278,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "ResSE-CNN1D": {
+     "auroc": 0.9758603428571431,
+     "tpr_fpr1": 0.8945714285714286,
+     "detection": 0.8977142857142857,
+     "test_fpr": 0.017,
+     "per_class": {
+      "DDOS_attack-HOIC": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.284,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "B-ProtoMeta": {
+     "auroc": 0.9510521428571429,
+     "tpr_fpr1": 0.8414285714285714,
+     "detection": 0.8462857142857143,
+     "test_fpr": 0.0144,
+     "per_class": {
+      "DDOS_attack-HOIC": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 0.902,
+      "Infilteration": 0.022,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "CZT-Hybrid": {
+     "auroc": 0.9782121714285714,
+     "tpr_fpr1": 0.896,
+     "detection": 0.8968571428571429,
+     "test_fpr": 0.0124,
+     "per_class": {
+      "DDOS_attack-HOIC": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.278,
+      "SSH-Bruteforce": 1.0
+     }
+    },
+    "CLAD": {
+     "auroc": 0.9752688857142858,
+     "tpr_fpr1": 0.8954285714285715,
+     "detection": 0.8957142857142857,
+     "test_fpr": 0.0118,
+     "per_class": {
+      "DDOS_attack-HOIC": 1.0,
+      "DDoS_attacks-LOIC-HTTP": 1.0,
+      "DoS_attacks-GoldenEye": 1.0,
+      "DoS_attacks-Hulk": 1.0,
+      "DoS_attacks-Slowloris": 1.0,
+      "Infilteration": 0.27,
+      "SSH-Bruteforce": 1.0
+     }
+    }
+   },
+   "time_s": 358.5942871570587
+  }
+ ]
+}
