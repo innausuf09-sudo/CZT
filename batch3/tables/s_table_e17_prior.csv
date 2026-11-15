@@ -1,0 +1,13 @@
+Setting,Policy,Information,Tuned on corrected scores minus Risk (corrected scores),Tuned on corrected scores minus tuned on uncorrected
+Original,Index,flag,"+0.086 [+0.074, +0.098]","-0.024 [-0.029, -0.018]"
+Original,Index,nov,"+0.002 [-0.005, +0.009]","+0.025 [+0.013, +0.037]"
+Original,Tuned Risk,flag,"+0.086 [+0.074, +0.099]","-0.018 [-0.022, -0.014]"
+Original,Tuned Risk,nov,"+0.007 [-0.000, +0.015]","-0.002 [-0.006, +0.002]"
+Imperfect,Index,flag,"+0.057 [+0.047, +0.066]","-0.003 [-0.006, +0.001]"
+Imperfect,Index,nov,"+0.004 [-0.002, +0.010]","+0.021 [+0.011, +0.031]"
+Imperfect,Tuned Risk,flag,"+0.050 [+0.042, +0.059]","-0.010 [-0.015, -0.005]"
+Imperfect,Tuned Risk,nov,"-0.002 [-0.009, +0.004]","-0.006 [-0.011, -0.002]"
+Uninformative,Index,flag,"+0.000 [-0.005, +0.006]","-0.007 [-0.015, +0.001]"
+Uninformative,Index,nov,"+0.002 [-0.006, +0.010]","-0.014 [-0.025, -0.004]"
+Uninformative,Tuned Risk,flag,"-0.004 [-0.009, -0.000]","+0.009 [+0.003, +0.015]"
+Uninformative,Tuned Risk,nov,"-0.002 [-0.011, +0.006]","-0.005 [-0.009, -0.002]"
