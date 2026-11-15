@@ -1,0 +1,52 @@
+Reproduction test of README 'Quick reproduction', 2026-11-15T06:00Z, macOS 27.2.1 arm64
+$ git clone https://github.com/innausuf09-sudo/CZT.git CZT && cd CZT && git checkout v2.0-revision
+fecca62f51cbf70da931c2c6509c34c47267b907
+$ python3.11 -m venv .venv
+$ source .venv/bin/activate
+Python 3.11.16
+$ pip install -r requirements-lock.txt
+
+pip install exit 0
+$ python -m analysis.make_all
+make_all exit 0
+skipped fig05_permutation_importance: missing results/e2_fold0_models.pkl, data/UNSW_NB15_training-set.csv
+skipped s01_data_characterisation: missing data/UNSW_NB15_training-set.csv, data/KDDTrain+.txt
+skipped analysis.data_details: missing data/UNSW_NB15_training-set.csv, data/KDDTrain+.txt
+running analysis.stats_full
+running analysis.detection_v2_report
+running analysis.calibration_prior
+running analysis.calibration_extra
+skipped analysis.nfv3_artefacts: missing results/e13_nfv3_cache.npz
+running analysis.catalogue_tables
+running analysis.triage_v2_report
+running analysis.supp_tables
+running analysis.partitions_report
+running analysis.robust_report
+running analysis.fresh_report
+running analysis.grid_report
+running analysis.matched_report
+running analysis.seeds_report
+running analysis.site_report
+running analysis.fig9_v3
+all figures and tables written to figures/ and tables/
+
+pip install: completed (exit 0); installed 45 packages from requirements-lock.txt
+
+Check of the rebuilt tables against the manuscript sources:
+  identical  T_abl.md
+  identical  T_dec.md
+  identical  T_dep.md
+  identical  T_fresh.md
+  identical  T_grid.md
+  identical  T_new.md
+  identical  T_tri.md
+  identical  T_vs.md
+  identical  T4_p1.md
+  identical  T5_p2.md
+  identical  T6_p3.md
+  identical  T7_p4.md
+  identical  T8_calib_cost.md
+
+Stored CSV and JSON tables rebuilt in place (git diff of tables/):
+ 2 files changed, 6 insertions(+), 6 deletions(-)
+  (remaining differences are in the last floating-point digit, about 1e-16)

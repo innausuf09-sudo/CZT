@@ -1,0 +1,1513 @@
+{
+ "holdout_families": [
+  "Generic",
+  "Exploits",
+  "Fuzzers",
+  "DoS",
+  "Reconnaissance",
+  "Analysis",
+  "Backdoor",
+  "Shellcode",
+  "Worms"
+ ],
+ "folds": [
+  {
+   "variant": "full",
+   "holdout": "Fuzzers",
+   "n_train": 14781,
+   "n_val": 2787,
+   "n_test": 9000,
+   "test_counts": {
+    "normal": 3000,
+    "known": 3000,
+    "zeroday": 3000
+   },
+   "clad_hp": {
+    "lr": 0.001,
+    "d_model": 128,
+    "depth": 2,
+    "dropout": 0.0
+   },
+   "det": {
+    "XGBoost": {
+     "test_fpr": 0.008666666666666666,
+     "known_recall": 1.0,
+     "auroc_known": 0.9998646666666667,
+     "auroc_zd": 0.9998942222222222,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "LightGBM": {
+     "test_fpr": 0.008666666666666666,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999206666666667,
+     "auroc_zd": 0.9999866666666666,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "DNN": {
+     "test_fpr": 0.007,
+     "known_recall": 1.0,
+     "auroc_known": 0.9996707222222223,
+     "auroc_zd": 0.9996672777777779,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "ResSE-CNN1D": {
+     "test_fpr": 0.006,
+     "known_recall": 1.0,
+     "auroc_known": 0.999948111111111,
+     "auroc_zd": 0.9999991111111112,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "B-ProtoMeta": {
+     "test_fpr": 0.013333333333333334,
+     "known_recall": 1.0,
+     "auroc_known": 0.9996468333333333,
+     "auroc_zd": 0.9996688888888887,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "CZT-Hybrid": {
+     "test_fpr": 0.01,
+     "known_recall": 1.0,
+     "auroc_known": 0.9998185555555555,
+     "auroc_zd": 0.9999451111111112,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "CLAD": {
+     "test_fpr": 0.008,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999542222222222,
+     "auroc_zd": 0.9999932222222222,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    }
+   },
+   "time_s": 198.7511763572693
+  },
+  {
+   "variant": "full",
+   "holdout": "DoS",
+   "n_train": 16267,
+   "n_val": 2997,
+   "n_test": 9000,
+   "test_counts": {
+    "normal": 3000,
+    "known": 3000,
+    "zeroday": 3000
+   },
+   "clad_hp": {
+    "lr": 0.001,
+    "d_model": 128,
+    "depth": 2,
+    "dropout": 0.0
+   },
+   "det": {
+    "XGBoost": {
+     "test_fpr": 0.01,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999532777777778,
+     "auroc_zd": 0.9999317222222222,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "LightGBM": {
+     "test_fpr": 0.008666666666666666,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999882222222222,
+     "auroc_zd": 0.9999837777777778,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "DNN": {
+     "test_fpr": 0.004,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999856666666666,
+     "auroc_zd": 0.9999783333333333,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "ResSE-CNN1D": {
+     "test_fpr": 0.005,
+     "known_recall": 0.999,
+     "auroc_known": 0.9994846666666668,
+     "auroc_zd": 0.9981962222222224,
+     "zdr": 0.9966666666666667,
+     "tpr_fpr1_zd": 0.9966666666666667
+    },
+    "B-ProtoMeta": {
+     "test_fpr": 0.008,
+     "known_recall": 0.999,
+     "auroc_known": 0.9990247222222224,
+     "auroc_zd": 0.9955762777777779,
+     "zdr": 0.9953333333333333,
+     "tpr_fpr1_zd": 0.9953333333333333
+    },
+    "CZT-Hybrid": {
+     "test_fpr": 0.005666666666666667,
+     "known_recall": 1.0,
+     "auroc_known": 0.9998965555555556,
+     "auroc_zd": 0.9998721111111112,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "CLAD": {
+     "test_fpr": 0.010333333333333333,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999814444444445,
+     "auroc_zd": 0.9999734444444444,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    }
+   },
+   "time_s": 202.16565012931824
+  },
+  {
+   "variant": "full",
+   "holdout": "Exploits",
+   "n_train": 14781,
+   "n_val": 2787,
+   "n_test": 9000,
+   "test_counts": {
+    "normal": 3000,
+    "known": 3000,
+    "zeroday": 3000
+   },
+   "clad_hp": {
+    "lr": 0.001,
+    "d_model": 256,
+    "depth": 3,
+    "dropout": 0.2
+   },
+   "det": {
+    "XGBoost": {
+     "test_fpr": 0.012,
+     "known_recall": 1.0,
+     "auroc_known": 0.999963888888889,
+     "auroc_zd": 0.9999375555555555,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "LightGBM": {
+     "test_fpr": 0.0036666666666666666,
+     "known_recall": 1.0,
+     "auroc_known": 0.999995,
+     "auroc_zd": 0.9999533333333332,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "DNN": {
+     "test_fpr": 0.0036666666666666666,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999365555555555,
+     "auroc_zd": 0.999704888888889,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "ResSE-CNN1D": {
+     "test_fpr": 0.012,
+     "known_recall": 0.9993333333333333,
+     "auroc_known": 0.9994185555555556,
+     "auroc_zd": 0.9985345555555555,
+     "zdr": 0.9986666666666667,
+     "tpr_fpr1_zd": 0.9986666666666667
+    },
+    "B-ProtoMeta": {
+     "test_fpr": 0.007666666666666666,
+     "known_recall": 1.0,
+     "auroc_known": 0.9998968888888888,
+     "auroc_zd": 0.9994732222222222,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "CZT-Hybrid": {
+     "test_fpr": 0.007333333333333333,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999425555555556,
+     "auroc_zd": 0.9997578888888888,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "CLAD": {
+     "test_fpr": 0.011,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999368888888889,
+     "auroc_zd": 0.9997116666666667,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    }
+   },
+   "time_s": 202.98722314834595
+  },
+  {
+   "variant": "full",
+   "holdout": "Reconnaissance",
+   "n_train": 15483,
+   "n_val": 2859,
+   "n_test": 9000,
+   "test_counts": {
+    "normal": 3000,
+    "known": 3000,
+    "zeroday": 3000
+   },
+   "clad_hp": {
+    "lr": 0.001,
+    "d_model": 256,
+    "depth": 3,
+    "dropout": 0.2
+   },
+   "det": {
+    "XGBoost": {
+     "test_fpr": 0.008333333333333333,
+     "known_recall": 1.0,
+     "auroc_known": 0.999762888888889,
+     "auroc_zd": 0.9997595555555556,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "LightGBM": {
+     "test_fpr": 0.006333333333333333,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999356666666667,
+     "auroc_zd": 0.9999464444444445,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "DNN": {
+     "test_fpr": 0.007,
+     "known_recall": 1.0,
+     "auroc_known": 0.9996695555555555,
+     "auroc_zd": 0.9996759999999999,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "ResSE-CNN1D": {
+     "test_fpr": 0.005333333333333333,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999314444444445,
+     "auroc_zd": 0.9999643333333333,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "B-ProtoMeta": {
+     "test_fpr": 0.007,
+     "known_recall": 1.0,
+     "auroc_known": 0.9998932222222222,
+     "auroc_zd": 0.9999870000000001,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "CZT-Hybrid": {
+     "test_fpr": 0.0036666666666666666,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999424444444445,
+     "auroc_zd": 0.9999963333333334,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "CLAD": {
+     "test_fpr": 0.009666666666666667,
+     "known_recall": 1.0,
+     "auroc_known": 0.9998692222222223,
+     "auroc_zd": 0.9999597777777778,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    }
+   },
+   "time_s": 245.04643988609314
+  },
+  {
+   "variant": "full",
+   "holdout": null,
+   "n_train": 16781,
+   "n_val": 3087,
+   "n_test": 6000,
+   "test_counts": {
+    "normal": 3000,
+    "known": 3000,
+    "zeroday": 0
+   },
+   "clad_hp": {
+    "lr": 0.001,
+    "d_model": 256,
+    "depth": 3,
+    "dropout": 0.0
+   },
+   "det": {
+    "XGBoost": {
+     "test_fpr": 0.015,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999999999999999
+    },
+    "LightGBM": {
+     "test_fpr": 0.011333333333333334,
+     "known_recall": 1.0,
+     "auroc_known": 1.0
+    },
+    "DNN": {
+     "test_fpr": 0.010666666666666666,
+     "known_recall": 1.0,
+     "auroc_known": 0.9997936111111112
+    },
+    "ResSE-CNN1D": {
+     "test_fpr": 0.006,
+     "known_recall": 1.0,
+     "auroc_known": 0.9996461111111111
+    },
+    "B-ProtoMeta": {
+     "test_fpr": 0.01633333333333333,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999044444444444
+    },
+    "CZT-Hybrid": {
+     "test_fpr": 0.010666666666666666,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999264444444445
+    },
+    "CLAD": {
+     "test_fpr": 0.008333333333333333,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999997777777778
+    }
+   },
+   "time_s": 273.43766713142395
+  },
+  {
+   "variant": "full",
+   "holdout": "Generic",
+   "n_train": 16304,
+   "n_val": 3003,
+   "n_test": 9000,
+   "test_counts": {
+    "normal": 3000,
+    "known": 3000,
+    "zeroday": 3000
+   },
+   "clad_hp": {
+    "lr": 0.001,
+    "d_model": 128,
+    "depth": 2,
+    "dropout": 0.0
+   },
+   "det": {
+    "XGBoost": {
+     "test_fpr": 0.012,
+     "known_recall": 1.0,
+     "auroc_known": 0.999925,
+     "auroc_zd": 0.9998765555555555,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "LightGBM": {
+     "test_fpr": 0.008333333333333333,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999701111111111,
+     "auroc_zd": 0.9999038888888888,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "DNN": {
+     "test_fpr": 0.009333333333333334,
+     "known_recall": 1.0,
+     "auroc_known": 0.9994373333333333,
+     "auroc_zd": 0.9994525555555556,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "ResSE-CNN1D": {
+     "test_fpr": 0.006666666666666667,
+     "known_recall": 1.0,
+     "auroc_known": 0.9997551666666666,
+     "auroc_zd": 0.9997253888888888,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "B-ProtoMeta": {
+     "test_fpr": 0.010666666666666666,
+     "known_recall": 1.0,
+     "auroc_known": 0.999690388888889,
+     "auroc_zd": 0.9995947222222222,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "CZT-Hybrid": {
+     "test_fpr": 0.007333333333333333,
+     "known_recall": 1.0,
+     "auroc_known": 0.9998397222222222,
+     "auroc_zd": 0.9997742222222222,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "CLAD": {
+     "test_fpr": 0.007666666666666666,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999738888888888,
+     "auroc_zd": 0.9999288888888889,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    }
+   },
+   "time_s": 305.2407937049866
+  },
+  {
+   "variant": "full",
+   "holdout": "Shellcode",
+   "n_train": 16570,
+   "n_val": 3050,
+   "n_test": 7462,
+   "test_counts": {
+    "normal": 3000,
+    "known": 3000,
+    "zeroday": 1462
+   },
+   "clad_hp": {
+    "lr": 0.001,
+    "d_model": 256,
+    "depth": 3,
+    "dropout": 0.0
+   },
+   "det": {
+    "XGBoost": {
+     "test_fpr": 0.004333333333333333,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999996111111111,
+     "auroc_zd": 0.9999999999999999,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "LightGBM": {
+     "test_fpr": 0.006666666666666667,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999993333333334,
+     "auroc_zd": 1.0,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "DNN": {
+     "test_fpr": 0.005666666666666667,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999995555555555,
+     "auroc_zd": 1.0,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "ResSE-CNN1D": {
+     "test_fpr": 0.0036666666666666666,
+     "known_recall": 1.0,
+     "auroc_known": 0.9996640555555555,
+     "auroc_zd": 0.9996680346557227,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "B-ProtoMeta": {
+     "test_fpr": 0.007333333333333333,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999681111111112,
+     "auroc_zd": 1.0,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "CZT-Hybrid": {
+     "test_fpr": 0.002,
+     "known_recall": 1.0,
+     "auroc_known": 0.999957,
+     "auroc_zd": 0.9999958960328318,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "CLAD": {
+     "test_fpr": 0.006,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999994444444444,
+     "auroc_zd": 1.0,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    }
+   },
+   "time_s": 161.63157892227173
+  },
+  {
+   "variant": "full",
+   "holdout": "Backdoor",
+   "n_train": 16744,
+   "n_val": 3081,
+   "n_test": 9000,
+   "test_counts": {
+    "normal": 3000,
+    "known": 3000,
+    "zeroday": 3000
+   },
+   "clad_hp": {
+    "lr": 0.001,
+    "d_model": 256,
+    "depth": 3,
+    "dropout": 0.0
+   },
+   "det": {
+    "XGBoost": {
+     "test_fpr": 0.005666666666666667,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999975555555556,
+     "auroc_zd": 0.9999954444444445,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "LightGBM": {
+     "test_fpr": 0.011,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999800000000001,
+     "auroc_zd": 0.9999743333333333,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "DNN": {
+     "test_fpr": 0.009333333333333334,
+     "known_recall": 1.0,
+     "auroc_known": 0.9995771666666666,
+     "auroc_zd": 0.9996097222222222,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "ResSE-CNN1D": {
+     "test_fpr": 0.006666666666666667,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999159444444444,
+     "auroc_zd": 0.9999128888888889,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "B-ProtoMeta": {
+     "test_fpr": 0.010333333333333333,
+     "known_recall": 1.0,
+     "auroc_known": 0.9996435555555556,
+     "auroc_zd": 0.99965,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "CZT-Hybrid": {
+     "test_fpr": 0.008,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999325555555555,
+     "auroc_zd": 0.9999213333333333,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "CLAD": {
+     "test_fpr": 0.011666666666666667,
+     "known_recall": 1.0,
+     "auroc_known": 0.9998461111111111,
+     "auroc_zd": 0.9998482222222222,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    }
+   },
+   "time_s": 164.17588591575623
+  },
+  {
+   "variant": "full",
+   "holdout": "Worms",
+   "n_train": 16764,
+   "n_val": 3085,
+   "n_test": 6122,
+   "test_counts": {
+    "normal": 3000,
+    "known": 3000,
+    "zeroday": 122
+   },
+   "clad_hp": {
+    "lr": 0.001,
+    "d_model": 256,
+    "depth": 3,
+    "dropout": 0.0
+   },
+   "det": {
+    "XGBoost": {
+     "test_fpr": 0.005,
+     "known_recall": 1.0,
+     "auroc_known": 1.0,
+     "auroc_zd": 1.0,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "LightGBM": {
+     "test_fpr": 0.011333333333333334,
+     "known_recall": 1.0,
+     "auroc_known": 1.0,
+     "auroc_zd": 1.0,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "DNN": {
+     "test_fpr": 0.006333333333333333,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999998888888888,
+     "auroc_zd": 1.0,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "ResSE-CNN1D": {
+     "test_fpr": 0.005,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999962222222222,
+     "auroc_zd": 1.0,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "B-ProtoMeta": {
+     "test_fpr": 0.006333333333333333,
+     "known_recall": 0.9996666666666667,
+     "auroc_known": 0.9999036666666666,
+     "auroc_zd": 0.9999972677595629,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "CZT-Hybrid": {
+     "test_fpr": 0.003,
+     "known_recall": 1.0,
+     "auroc_known": 1.0,
+     "auroc_zd": 1.0,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "CLAD": {
+     "test_fpr": 0.01,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999985555555555,
+     "auroc_zd": 1.0,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    }
+   },
+   "time_s": 169.0611219406128
+  },
+  {
+   "variant": "nottl",
+   "holdout": "Generic",
+   "n_train": 16304,
+   "n_val": 3003,
+   "n_test": 9000,
+   "test_counts": {
+    "normal": 3000,
+    "known": 3000,
+    "zeroday": 3000
+   },
+   "clad_hp": {
+    "lr": 0.001,
+    "d_model": 256,
+    "depth": 3,
+    "dropout": 0.0
+   },
+   "det": {
+    "XGBoost": {
+     "test_fpr": 0.01,
+     "known_recall": 1.0,
+     "auroc_known": 0.9998616666666666,
+     "auroc_zd": 0.9996872777777778,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "LightGBM": {
+     "test_fpr": 0.009333333333333334,
+     "known_recall": 1.0,
+     "auroc_known": 0.9997374444444445,
+     "auroc_zd": 0.9996187777777777,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "DNN": {
+     "test_fpr": 0.011333333333333334,
+     "known_recall": 1.0,
+     "auroc_known": 0.9993586666666667,
+     "auroc_zd": 0.9993601111111112,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "ResSE-CNN1D": {
+     "test_fpr": 0.004666666666666667,
+     "known_recall": 1.0,
+     "auroc_known": 0.9996937777777778,
+     "auroc_zd": 0.9996777222222222,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "B-ProtoMeta": {
+     "test_fpr": 0.007333333333333333,
+     "known_recall": 1.0,
+     "auroc_known": 0.9996169444444444,
+     "auroc_zd": 0.9995743333333333,
+     "zdr": 0.9996666666666667,
+     "tpr_fpr1_zd": 0.9996666666666667
+    },
+    "CZT-Hybrid": {
+     "test_fpr": 0.008333333333333333,
+     "known_recall": 1.0,
+     "auroc_known": 0.9997528888888888,
+     "auroc_zd": 0.9996291111111111,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "CLAD": {
+     "test_fpr": 0.010333333333333333,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999793333333333,
+     "auroc_zd": 0.9999165555555555,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    }
+   },
+   "time_s": 183.9892339706421
+  },
+  {
+   "variant": "full",
+   "holdout": "Analysis",
+   "n_train": 16554,
+   "n_val": 3047,
+   "n_test": 6959,
+   "test_counts": {
+    "normal": 3000,
+    "known": 3000,
+    "zeroday": 959
+   },
+   "clad_hp": {
+    "lr": 0.001,
+    "d_model": 128,
+    "depth": 2,
+    "dropout": 0.0
+   },
+   "det": {
+    "XGBoost": {
+     "test_fpr": 0.010666666666666666,
+     "known_recall": 1.0,
+     "auroc_known": 1.0,
+     "auroc_zd": 0.9999999999999999,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "LightGBM": {
+     "test_fpr": 0.014666666666666666,
+     "known_recall": 1.0,
+     "auroc_known": 1.0,
+     "auroc_zd": 1.0,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "DNN": {
+     "test_fpr": 0.007333333333333333,
+     "known_recall": 1.0,
+     "auroc_known": 1.0,
+     "auroc_zd": 1.0,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "ResSE-CNN1D": {
+     "test_fpr": 0.007,
+     "known_recall": 1.0,
+     "auroc_known": 1.0,
+     "auroc_zd": 1.0,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "B-ProtoMeta": {
+     "test_fpr": 0.008,
+     "known_recall": 1.0,
+     "auroc_known": 1.0,
+     "auroc_zd": 1.0,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "CZT-Hybrid": {
+     "test_fpr": 0.005666666666666667,
+     "known_recall": 1.0,
+     "auroc_known": 1.0,
+     "auroc_zd": 1.0,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "CLAD": {
+     "test_fpr": 0.0033333333333333335,
+     "known_recall": 1.0,
+     "auroc_known": 1.0,
+     "auroc_zd": 1.0,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    }
+   },
+   "time_s": 308.1060838699341
+  },
+  {
+   "variant": "nottl",
+   "holdout": null,
+   "n_train": 16781,
+   "n_val": 3087,
+   "n_test": 6000,
+   "test_counts": {
+    "normal": 3000,
+    "known": 3000,
+    "zeroday": 0
+   },
+   "clad_hp": {
+    "lr": 0.001,
+    "d_model": 128,
+    "depth": 2,
+    "dropout": 0.0
+   },
+   "det": {
+    "XGBoost": {
+     "test_fpr": 0.013333333333333334,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999964444444445
+    },
+    "LightGBM": {
+     "test_fpr": 0.012333333333333333,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999973333333333
+    },
+    "DNN": {
+     "test_fpr": 0.012,
+     "known_recall": 1.0,
+     "auroc_known": 0.9998331666666667
+    },
+    "ResSE-CNN1D": {
+     "test_fpr": 0.011666666666666667,
+     "known_recall": 1.0,
+     "auroc_known": 0.9997807222222221
+    },
+    "B-ProtoMeta": {
+     "test_fpr": 0.013666666666666667,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999862222222222
+    },
+    "CZT-Hybrid": {
+     "test_fpr": 0.015,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999906666666667
+    },
+    "CLAD": {
+     "test_fpr": 0.007333333333333333,
+     "known_recall": 1.0,
+     "auroc_known": 0.999997
+    }
+   },
+   "time_s": 236.02269196510315
+  },
+  {
+   "variant": "nottl",
+   "holdout": "Exploits",
+   "n_train": 14781,
+   "n_val": 2787,
+   "n_test": 9000,
+   "test_counts": {
+    "normal": 3000,
+    "known": 3000,
+    "zeroday": 3000
+   },
+   "clad_hp": {
+    "lr": 0.0003,
+    "d_model": 256,
+    "depth": 3,
+    "dropout": 0.0
+   },
+   "det": {
+    "XGBoost": {
+     "test_fpr": 0.01,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999129999999999,
+     "auroc_zd": 0.9998345555555556,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "LightGBM": {
+     "test_fpr": 0.011,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999387222222222,
+     "auroc_zd": 0.9998910555555556,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "DNN": {
+     "test_fpr": 0.010666666666666666,
+     "known_recall": 1.0,
+     "auroc_known": 0.9998469444444444,
+     "auroc_zd": 0.9997302222222222,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "ResSE-CNN1D": {
+     "test_fpr": 0.012,
+     "known_recall": 0.9996666666666667,
+     "auroc_known": 0.9996355555555555,
+     "auroc_zd": 0.9996535555555556,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "B-ProtoMeta": {
+     "test_fpr": 0.006666666666666667,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999143333333333,
+     "auroc_zd": 0.9997381666666667,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "CZT-Hybrid": {
+     "test_fpr": 0.006333333333333333,
+     "known_recall": 1.0,
+     "auroc_known": 0.9997391111111111,
+     "auroc_zd": 0.9996831111111111,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "CLAD": {
+     "test_fpr": 0.006,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999577777777778,
+     "auroc_zd": 0.9998777777777778,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    }
+   },
+   "time_s": 205.7350721359253
+  },
+  {
+   "variant": "nottl",
+   "holdout": "Fuzzers",
+   "n_train": 14781,
+   "n_val": 2787,
+   "n_test": 9000,
+   "test_counts": {
+    "normal": 3000,
+    "known": 3000,
+    "zeroday": 3000
+   },
+   "clad_hp": {
+    "lr": 0.001,
+    "d_model": 128,
+    "depth": 2,
+    "dropout": 0.0
+   },
+   "det": {
+    "XGBoost": {
+     "test_fpr": 0.011333333333333334,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999951111111111,
+     "auroc_zd": 0.9999984444444443,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "LightGBM": {
+     "test_fpr": 0.009333333333333334,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999986666666667,
+     "auroc_zd": 0.9999986666666666,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "DNN": {
+     "test_fpr": 0.008666666666666666,
+     "known_recall": 1.0,
+     "auroc_known": 0.9998194444444445,
+     "auroc_zd": 0.9998495555555555,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "ResSE-CNN1D": {
+     "test_fpr": 0.009,
+     "known_recall": 1.0,
+     "auroc_known": 0.9997443333333333,
+     "auroc_zd": 0.9997244444444444,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "B-ProtoMeta": {
+     "test_fpr": 0.009,
+     "known_recall": 1.0,
+     "auroc_known": 0.9997160555555555,
+     "auroc_zd": 0.9996909444444444,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "CZT-Hybrid": {
+     "test_fpr": 0.009666666666666667,
+     "known_recall": 1.0,
+     "auroc_known": 0.9998274444444444,
+     "auroc_zd": 0.9997747777777778,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "CLAD": {
+     "test_fpr": 0.009666666666666667,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999747777777778,
+     "auroc_zd": 0.9999858888888888,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    }
+   },
+   "time_s": 210.01656079292297
+  },
+  {
+   "variant": "nottl",
+   "holdout": "DoS",
+   "n_train": 16267,
+   "n_val": 2997,
+   "n_test": 9000,
+   "test_counts": {
+    "normal": 3000,
+    "known": 3000,
+    "zeroday": 3000
+   },
+   "clad_hp": {
+    "lr": 0.001,
+    "d_model": 256,
+    "depth": 3,
+    "dropout": 0.0
+   },
+   "det": {
+    "XGBoost": {
+     "test_fpr": 0.011333333333333334,
+     "known_recall": 1.0,
+     "auroc_known": 0.9997113888888888,
+     "auroc_zd": 0.9996924444444445,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "LightGBM": {
+     "test_fpr": 0.010333333333333333,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999816666666667,
+     "auroc_zd": 0.9999725555555555,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "DNN": {
+     "test_fpr": 0.006333333333333333,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999997777777778,
+     "auroc_zd": 0.999983,
+     "zdr": 0.9996666666666667,
+     "tpr_fpr1_zd": 0.9996666666666667
+    },
+    "ResSE-CNN1D": {
+     "test_fpr": 0.002,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999997777777777,
+     "auroc_zd": 0.9978128888888889,
+     "zdr": 0.996,
+     "tpr_fpr1_zd": 0.9966666666666667
+    },
+    "B-ProtoMeta": {
+     "test_fpr": 0.006666666666666667,
+     "known_recall": 0.9986666666666667,
+     "auroc_known": 0.9999402222222222,
+     "auroc_zd": 0.9990055555555555,
+     "zdr": 0.9956666666666667,
+     "tpr_fpr1_zd": 0.9956666666666667
+    },
+    "CZT-Hybrid": {
+     "test_fpr": 0.004333333333333333,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999991111111112,
+     "auroc_zd": 0.9999971111111111,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "CLAD": {
+     "test_fpr": 0.008333333333333333,
+     "known_recall": 1.0,
+     "auroc_known": 1.0,
+     "auroc_zd": 0.9999994444444444,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    }
+   },
+   "time_s": 182.79599905014038
+  },
+  {
+   "variant": "nottl",
+   "holdout": "Analysis",
+   "n_train": 16554,
+   "n_val": 3047,
+   "n_test": 6959,
+   "test_counts": {
+    "normal": 3000,
+    "known": 3000,
+    "zeroday": 959
+   },
+   "clad_hp": {
+    "lr": 0.001,
+    "d_model": 128,
+    "depth": 2,
+    "dropout": 0.0
+   },
+   "det": {
+    "XGBoost": {
+     "test_fpr": 0.010666666666666666,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999999999999999,
+     "auroc_zd": 1.0,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "LightGBM": {
+     "test_fpr": 0.007333333333333333,
+     "known_recall": 1.0,
+     "auroc_known": 1.0,
+     "auroc_zd": 1.0,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "DNN": {
+     "test_fpr": 0.007666666666666666,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999987777777778,
+     "auroc_zd": 1.0,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "ResSE-CNN1D": {
+     "test_fpr": 0.0033333333333333335,
+     "known_recall": 1.0,
+     "auroc_known": 1.0,
+     "auroc_zd": 1.0,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "B-ProtoMeta": {
+     "test_fpr": 0.009,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999998888888888,
+     "auroc_zd": 1.0,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "CZT-Hybrid": {
+     "test_fpr": 0.008333333333333333,
+     "known_recall": 1.0,
+     "auroc_known": 1.0,
+     "auroc_zd": 1.0,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "CLAD": {
+     "test_fpr": 0.007666666666666666,
+     "known_recall": 1.0,
+     "auroc_known": 0.999999888888889,
+     "auroc_zd": 1.0,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    }
+   },
+   "time_s": 153.33573985099792
+  },
+  {
+   "variant": "nottl",
+   "holdout": "Reconnaissance",
+   "n_train": 15483,
+   "n_val": 2859,
+   "n_test": 9000,
+   "test_counts": {
+    "normal": 3000,
+    "known": 3000,
+    "zeroday": 3000
+   },
+   "clad_hp": {
+    "lr": 0.001,
+    "d_model": 128,
+    "depth": 2,
+    "dropout": 0.0
+   },
+   "det": {
+    "XGBoost": {
+     "test_fpr": 0.006,
+     "known_recall": 1.0,
+     "auroc_known": 0.9994687777777778,
+     "auroc_zd": 0.9994901111111112,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "LightGBM": {
+     "test_fpr": 0.009666666666666667,
+     "known_recall": 1.0,
+     "auroc_known": 0.9998381111111111,
+     "auroc_zd": 0.999671,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "DNN": {
+     "test_fpr": 0.006,
+     "known_recall": 1.0,
+     "auroc_known": 0.9996695555555556,
+     "auroc_zd": 0.9996743333333333,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "ResSE-CNN1D": {
+     "test_fpr": 0.005333333333333333,
+     "known_recall": 0.9996666666666667,
+     "auroc_known": 0.9993973333333332,
+     "auroc_zd": 0.999357,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "B-ProtoMeta": {
+     "test_fpr": 0.008666666666666666,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999104444444444,
+     "auroc_zd": 0.9999856666666668,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "CZT-Hybrid": {
+     "test_fpr": 0.0036666666666666666,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999036666666666,
+     "auroc_zd": 0.9999794444444444,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "CLAD": {
+     "test_fpr": 0.007666666666666666,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999685555555555,
+     "auroc_zd": 0.9999925555555557,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    }
+   },
+   "time_s": 189.64080095291138
+  },
+  {
+   "variant": "nottl",
+   "holdout": "Backdoor",
+   "n_train": 16744,
+   "n_val": 3081,
+   "n_test": 9000,
+   "test_counts": {
+    "normal": 3000,
+    "known": 3000,
+    "zeroday": 3000
+   },
+   "clad_hp": {
+    "lr": 0.001,
+    "d_model": 256,
+    "depth": 3,
+    "dropout": 0.2
+   },
+   "det": {
+    "XGBoost": {
+     "test_fpr": 0.014,
+     "known_recall": 1.0,
+     "auroc_known": 0.9998771666666667,
+     "auroc_zd": 0.9998354444444444,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "LightGBM": {
+     "test_fpr": 0.009333333333333334,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999053333333333,
+     "auroc_zd": 0.9998795,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "DNN": {
+     "test_fpr": 0.012666666666666666,
+     "known_recall": 1.0,
+     "auroc_known": 0.9989365555555556,
+     "auroc_zd": 0.9989474444444444,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "ResSE-CNN1D": {
+     "test_fpr": 0.006333333333333333,
+     "known_recall": 1.0,
+     "auroc_known": 0.999773722222222,
+     "auroc_zd": 0.9997548888888887,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "B-ProtoMeta": {
+     "test_fpr": 0.011333333333333334,
+     "known_recall": 1.0,
+     "auroc_known": 0.9995388888888888,
+     "auroc_zd": 0.9996078333333334,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "CZT-Hybrid": {
+     "test_fpr": 0.008666666666666666,
+     "known_recall": 1.0,
+     "auroc_known": 0.9997491111111111,
+     "auroc_zd": 0.9997586666666666,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "CLAD": {
+     "test_fpr": 0.013,
+     "known_recall": 1.0,
+     "auroc_known": 0.9997050000000001,
+     "auroc_zd": 0.9998108888888889,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    }
+   },
+   "time_s": 192.67004299163818
+  },
+  {
+   "variant": "nottl",
+   "holdout": "Worms",
+   "n_train": 16764,
+   "n_val": 3085,
+   "n_test": 6122,
+   "test_counts": {
+    "normal": 3000,
+    "known": 3000,
+    "zeroday": 122
+   },
+   "clad_hp": {
+    "lr": 0.001,
+    "d_model": 256,
+    "depth": 3,
+    "dropout": 0.2
+   },
+   "det": {
+    "XGBoost": {
+     "test_fpr": 0.013,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999998888888888,
+     "auroc_zd": 0.9999999999999999,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "LightGBM": {
+     "test_fpr": 0.009333333333333334,
+     "known_recall": 1.0,
+     "auroc_known": 1.0,
+     "auroc_zd": 1.0,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "DNN": {
+     "test_fpr": 0.004666666666666667,
+     "known_recall": 1.0,
+     "auroc_known": 1.0,
+     "auroc_zd": 1.0,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "ResSE-CNN1D": {
+     "test_fpr": 0.005666666666666667,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999987777777778,
+     "auroc_zd": 1.0,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "B-ProtoMeta": {
+     "test_fpr": 0.0033333333333333335,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999992222222222,
+     "auroc_zd": 1.0,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "CZT-Hybrid": {
+     "test_fpr": 0.006666666666666667,
+     "known_recall": 1.0,
+     "auroc_known": 1.0,
+     "auroc_zd": 1.0,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "CLAD": {
+     "test_fpr": 0.007666666666666666,
+     "known_recall": 1.0,
+     "auroc_known": 1.0,
+     "auroc_zd": 1.0,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    }
+   },
+   "time_s": 159.25057697296143
+  },
+  {
+   "variant": "nottl",
+   "holdout": "Shellcode",
+   "n_train": 16570,
+   "n_val": 3050,
+   "n_test": 7462,
+   "test_counts": {
+    "normal": 3000,
+    "known": 3000,
+    "zeroday": 1462
+   },
+   "clad_hp": {
+    "lr": 0.001,
+    "d_model": 128,
+    "depth": 2,
+    "dropout": 0.0
+   },
+   "det": {
+    "XGBoost": {
+     "test_fpr": 0.011,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999833333333334,
+     "auroc_zd": 0.999997948016416,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "LightGBM": {
+     "test_fpr": 0.006666666666666667,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999962222222222,
+     "auroc_zd": 0.9999988600091199,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "DNN": {
+     "test_fpr": 0.005333333333333333,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999834444444444,
+     "auroc_zd": 0.9999646602827178,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "ResSE-CNN1D": {
+     "test_fpr": 0.005666666666666667,
+     "known_recall": 1.0,
+     "auroc_known": 0.9998892777777779,
+     "auroc_zd": 0.9999598723210215,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "B-ProtoMeta": {
+     "test_fpr": 0.005666666666666667,
+     "known_recall": 1.0,
+     "auroc_known": 0.9997920555555555,
+     "auroc_zd": 0.9998801869585043,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "CZT-Hybrid": {
+     "test_fpr": 0.005333333333333333,
+     "known_recall": 1.0,
+     "auroc_known": 0.9998889999999999,
+     "auroc_zd": 0.9999808481532149,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    },
+    "CLAD": {
+     "test_fpr": 0.005666666666666667,
+     "known_recall": 1.0,
+     "auroc_known": 0.9999846666666666,
+     "auroc_zd": 0.9999952120383035,
+     "zdr": 1.0,
+     "tpr_fpr1_zd": 1.0
+    }
+   },
+   "time_s": 165.8053948879242
+  }
+ ]
+}
