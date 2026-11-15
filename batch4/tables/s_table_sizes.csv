@@ -1,0 +1,6 @@
+Protocol,Folds,Train,Validation,Test,Note
+"P1 (UNSW-NB15, i.i.d.)",5 (stratified),16320,2880,4800,"24,000-record stratified sample; same sizes in every fold"
+"P2 (UNSW-NB15, family hold-out)",9 (one per family),"19,682 to 21,571","3,561 to 3,837","6,159 to 9,000","test: up to 3,000 benign, 3,000 known-family and 3,000 unseen-family records"
+"P3 (NSL-KDD, unseen types)",3 seeds,19589,3458,22544,official KDDTest+ file; 664 test records have an identical feature vector in KDDTrain+
+"P4 (cross-dataset, 18 features)",2 directions x 3 seeds,"10,000 benign + up to 2,500 per class",15% of the source sample,"10,000",target sample drawn with the same seed
+"P5 (NF-UNSW-NB15-v3, January to February)","10 (none held out, and each family)","14,781 to 16,781","2,787 to 3,087","6,000 to 9,000","training and validation from January, test from February"
