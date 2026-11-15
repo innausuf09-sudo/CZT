@@ -1,0 +1,6 @@
+3 scenarios, groups {'G1': [np.str_('Analysis'), np.str_('Exploits'), np.str_('Fuzzers'), np.str_('Generic'), np.str_('Shellcode')], 'G2': [np.str_('Backdoor'), np.str_('DoS'), np.str_('Reconnaissance'), np.str_('Worms')]}, 48 tuning runs, 8 processes
+  tuned 1/48 ('central', 'G1', 'PG', 'nov') feasible=True [228s]
+  tuned 21/48 ('original', 'G2', 'CZT', 'flag') feasible=True [583s]
+  tuned 41/48 ('uninformative_0.5', 'G2', 'Risk', 'flag') feasible=True [933s]
+  evaluated [1043s]
+done in 1043s -> results/e9_triage_part0.json
