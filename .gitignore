@@ -1,0 +1,23 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+.venv/
+venv/
+*.egg-info/
+# datasets are downloaded, never committed
+data/*.csv
+data/*.txt
+data/*.zip
+data/nfv3/*.csv
+data/nfv3/*.zip
+data/nfv3/*_sample_info.txt
+# large or dataset-derived caches that are rebuilt by the experiments
+results/*_cache.npz
+results/*.pkl
+results/log_*.txt
+# copies written for the manuscript in a stand-alone clone
+tables/manuscript/
+figures/manuscript/
+figures/*.pdf
+figures/
