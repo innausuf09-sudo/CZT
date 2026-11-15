@@ -1,9 +1,0 @@
-{
- "unsw_conflict_groups": 2445,
- "benign_vs_attack_groups": 414,
- "family_vs_family_groups": 2031,
- "rows_benign_vs_attack": 829,
- "rows_family_vs_family": 10677,
- "kdd_test_records_with_identical_features_in_train": 664,
- "kdd_test_records": 22544
-}
