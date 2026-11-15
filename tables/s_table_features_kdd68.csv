@@ -1,0 +1,69 @@
+feature,source,transform,vocabulary
+duration,duration,"max(x, 0) then log(1 + x)",
+src_bytes,src_bytes,"max(x, 0) then log(1 + x)",
+dst_bytes,dst_bytes,"max(x, 0) then log(1 + x)",
+land,land,"max(x, 0) then log(1 + x)",
+wrong_fragment,wrong_fragment,"max(x, 0) then log(1 + x)",
+urgent,urgent,"max(x, 0) then log(1 + x)",
+hot,hot,"max(x, 0) then log(1 + x)",
+num_failed_logins,num_failed_logins,"max(x, 0) then log(1 + x)",
+logged_in,logged_in,"max(x, 0) then log(1 + x)",
+num_compromised,num_compromised,"max(x, 0) then log(1 + x)",
+root_shell,root_shell,"max(x, 0) then log(1 + x)",
+su_attempted,su_attempted,"max(x, 0) then log(1 + x)",
+num_root,num_root,"max(x, 0) then log(1 + x)",
+num_file_creations,num_file_creations,"max(x, 0) then log(1 + x)",
+num_shells,num_shells,"max(x, 0) then log(1 + x)",
+num_access_files,num_access_files,"max(x, 0) then log(1 + x)",
+is_host_login,is_host_login,"max(x, 0) then log(1 + x)",
+is_guest_login,is_guest_login,"max(x, 0) then log(1 + x)",
+count,count,"max(x, 0) then log(1 + x)",
+srv_count,srv_count,"max(x, 0) then log(1 + x)",
+serror_rate,serror_rate,"max(x, 0) then log(1 + x)",
+srv_serror_rate,srv_serror_rate,"max(x, 0) then log(1 + x)",
+rerror_rate,rerror_rate,"max(x, 0) then log(1 + x)",
+srv_rerror_rate,srv_rerror_rate,"max(x, 0) then log(1 + x)",
+same_srv_rate,same_srv_rate,"max(x, 0) then log(1 + x)",
+diff_srv_rate,diff_srv_rate,"max(x, 0) then log(1 + x)",
+srv_diff_host_rate,srv_diff_host_rate,"max(x, 0) then log(1 + x)",
+dst_host_count,dst_host_count,"max(x, 0) then log(1 + x)",
+dst_host_srv_count,dst_host_srv_count,"max(x, 0) then log(1 + x)",
+dst_host_same_srv_rate,dst_host_same_srv_rate,"max(x, 0) then log(1 + x)",
+dst_host_diff_srv_rate,dst_host_diff_srv_rate,"max(x, 0) then log(1 + x)",
+dst_host_same_src_port_rate,dst_host_same_src_port_rate,"max(x, 0) then log(1 + x)",
+dst_host_srv_diff_host_rate,dst_host_srv_diff_host_rate,"max(x, 0) then log(1 + x)",
+dst_host_serror_rate,dst_host_serror_rate,"max(x, 0) then log(1 + x)",
+dst_host_srv_serror_rate,dst_host_srv_serror_rate,"max(x, 0) then log(1 + x)",
+dst_host_rerror_rate,dst_host_rerror_rate,"max(x, 0) then log(1 + x)",
+dst_host_srv_rerror_rate,dst_host_srv_rerror_rate,"max(x, 0) then log(1 + x)",
+protocol_type=tcp,protocol_type,one-hot,"tcp, udp, icmp, other"
+protocol_type=udp,protocol_type,one-hot,"tcp, udp, icmp, other"
+protocol_type=icmp,protocol_type,one-hot,"tcp, udp, icmp, other"
+protocol_type=other,protocol_type,one-hot,"tcp, udp, icmp, other"
+service=http,service,one-hot,"http, private, domain_u, smtp, ftp_data, ecr_i, eco_i, other, ftp, telnet, finger, urp_i, auth, imap4, pop_3, other"
+service=private,service,one-hot,"http, private, domain_u, smtp, ftp_data, ecr_i, eco_i, other, ftp, telnet, finger, urp_i, auth, imap4, pop_3, other"
+service=domain_u,service,one-hot,"http, private, domain_u, smtp, ftp_data, ecr_i, eco_i, other, ftp, telnet, finger, urp_i, auth, imap4, pop_3, other"
+service=smtp,service,one-hot,"http, private, domain_u, smtp, ftp_data, ecr_i, eco_i, other, ftp, telnet, finger, urp_i, auth, imap4, pop_3, other"
+service=ftp_data,service,one-hot,"http, private, domain_u, smtp, ftp_data, ecr_i, eco_i, other, ftp, telnet, finger, urp_i, auth, imap4, pop_3, other"
+service=ecr_i,service,one-hot,"http, private, domain_u, smtp, ftp_data, ecr_i, eco_i, other, ftp, telnet, finger, urp_i, auth, imap4, pop_3, other"
+service=eco_i,service,one-hot,"http, private, domain_u, smtp, ftp_data, ecr_i, eco_i, other, ftp, telnet, finger, urp_i, auth, imap4, pop_3, other"
+service=other,service,one-hot,"http, private, domain_u, smtp, ftp_data, ecr_i, eco_i, other, ftp, telnet, finger, urp_i, auth, imap4, pop_3, other"
+service=ftp,service,one-hot,"http, private, domain_u, smtp, ftp_data, ecr_i, eco_i, other, ftp, telnet, finger, urp_i, auth, imap4, pop_3, other"
+service=telnet,service,one-hot,"http, private, domain_u, smtp, ftp_data, ecr_i, eco_i, other, ftp, telnet, finger, urp_i, auth, imap4, pop_3, other"
+service=finger,service,one-hot,"http, private, domain_u, smtp, ftp_data, ecr_i, eco_i, other, ftp, telnet, finger, urp_i, auth, imap4, pop_3, other"
+service=urp_i,service,one-hot,"http, private, domain_u, smtp, ftp_data, ecr_i, eco_i, other, ftp, telnet, finger, urp_i, auth, imap4, pop_3, other"
+service=auth,service,one-hot,"http, private, domain_u, smtp, ftp_data, ecr_i, eco_i, other, ftp, telnet, finger, urp_i, auth, imap4, pop_3, other"
+service=imap4,service,one-hot,"http, private, domain_u, smtp, ftp_data, ecr_i, eco_i, other, ftp, telnet, finger, urp_i, auth, imap4, pop_3, other"
+service=pop_3,service,one-hot,"http, private, domain_u, smtp, ftp_data, ecr_i, eco_i, other, ftp, telnet, finger, urp_i, auth, imap4, pop_3, other"
+flag=SF,flag,one-hot,"SF, S0, REJ, RSTR, SH, RSTO, S1, RSTOS0, S3, S2, OTH, other"
+flag=S0,flag,one-hot,"SF, S0, REJ, RSTR, SH, RSTO, S1, RSTOS0, S3, S2, OTH, other"
+flag=REJ,flag,one-hot,"SF, S0, REJ, RSTR, SH, RSTO, S1, RSTOS0, S3, S2, OTH, other"
+flag=RSTR,flag,one-hot,"SF, S0, REJ, RSTR, SH, RSTO, S1, RSTOS0, S3, S2, OTH, other"
+flag=SH,flag,one-hot,"SF, S0, REJ, RSTR, SH, RSTO, S1, RSTOS0, S3, S2, OTH, other"
+flag=RSTO,flag,one-hot,"SF, S0, REJ, RSTR, SH, RSTO, S1, RSTOS0, S3, S2, OTH, other"
+flag=S1,flag,one-hot,"SF, S0, REJ, RSTR, SH, RSTO, S1, RSTOS0, S3, S2, OTH, other"
+flag=RSTOS0,flag,one-hot,"SF, S0, REJ, RSTR, SH, RSTO, S1, RSTOS0, S3, S2, OTH, other"
+flag=S3,flag,one-hot,"SF, S0, REJ, RSTR, SH, RSTO, S1, RSTOS0, S3, S2, OTH, other"
+flag=S2,flag,one-hot,"SF, S0, REJ, RSTR, SH, RSTO, S1, RSTOS0, S3, S2, OTH, other"
+flag=OTH,flag,one-hot,"SF, S0, REJ, RSTR, SH, RSTO, S1, RSTOS0, S3, S2, OTH, other"
+flag=other,flag,one-hot,"SF, S0, REJ, RSTR, SH, RSTO, S1, RSTOS0, S3, S2, OTH, other"

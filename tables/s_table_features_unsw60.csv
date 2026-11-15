@@ -1,0 +1,61 @@
+feature,source,transform,vocabulary
+dur,dur,"max(x, 0) then log(1 + x)",
+spkts,spkts,"max(x, 0) then log(1 + x)",
+dpkts,dpkts,"max(x, 0) then log(1 + x)",
+sbytes,sbytes,"max(x, 0) then log(1 + x)",
+dbytes,dbytes,"max(x, 0) then log(1 + x)",
+rate,rate,"max(x, 0) then log(1 + x)",
+sttl,sttl,"max(x, 0) then log(1 + x)",
+dttl,dttl,"max(x, 0) then log(1 + x)",
+sload,sload,"max(x, 0) then log(1 + x)",
+dload,dload,"max(x, 0) then log(1 + x)",
+sloss,sloss,"max(x, 0) then log(1 + x)",
+dloss,dloss,"max(x, 0) then log(1 + x)",
+sinpkt,sinpkt,"max(x, 0) then log(1 + x)",
+dinpkt,dinpkt,"max(x, 0) then log(1 + x)",
+sjit,sjit,"max(x, 0) then log(1 + x)",
+djit,djit,"max(x, 0) then log(1 + x)",
+swin,swin,"max(x, 0) then log(1 + x)",
+stcpb,stcpb,"max(x, 0) then log(1 + x)",
+dtcpb,dtcpb,"max(x, 0) then log(1 + x)",
+dwin,dwin,"max(x, 0) then log(1 + x)",
+tcprtt,tcprtt,"max(x, 0) then log(1 + x)",
+synack,synack,"max(x, 0) then log(1 + x)",
+ackdat,ackdat,"max(x, 0) then log(1 + x)",
+smean,smean,"max(x, 0) then log(1 + x)",
+dmean,dmean,"max(x, 0) then log(1 + x)",
+trans_depth,trans_depth,"max(x, 0) then log(1 + x)",
+response_body_len,response_body_len,"max(x, 0) then log(1 + x)",
+ct_srv_src,ct_srv_src,"max(x, 0) then log(1 + x)",
+ct_state_ttl,ct_state_ttl,"max(x, 0) then log(1 + x)",
+ct_dst_ltm,ct_dst_ltm,"max(x, 0) then log(1 + x)",
+ct_src_dport_ltm,ct_src_dport_ltm,"max(x, 0) then log(1 + x)",
+ct_dst_sport_ltm,ct_dst_sport_ltm,"max(x, 0) then log(1 + x)",
+ct_dst_src_ltm,ct_dst_src_ltm,"max(x, 0) then log(1 + x)",
+is_ftp_login,is_ftp_login,"max(x, 0) then log(1 + x)",
+ct_ftp_cmd,ct_ftp_cmd,"max(x, 0) then log(1 + x)",
+ct_flw_http_mthd,ct_flw_http_mthd,"max(x, 0) then log(1 + x)",
+ct_src_ltm,ct_src_ltm,"max(x, 0) then log(1 + x)",
+ct_srv_dst,ct_srv_dst,"max(x, 0) then log(1 + x)",
+is_sm_ips_ports,is_sm_ips_ports,"max(x, 0) then log(1 + x)",
+proto=tcp,proto,one-hot,"tcp, udp, unas, arp, ospf, other (any value outside the list)"
+proto=udp,proto,one-hot,"tcp, udp, unas, arp, ospf, other (any value outside the list)"
+proto=unas,proto,one-hot,"tcp, udp, unas, arp, ospf, other (any value outside the list)"
+proto=arp,proto,one-hot,"tcp, udp, unas, arp, ospf, other (any value outside the list)"
+proto=ospf,proto,one-hot,"tcp, udp, unas, arp, ospf, other (any value outside the list)"
+proto=other,proto,one-hot,"tcp, udp, unas, arp, ospf, other (any value outside the list)"
+service=-,service,one-hot,"-, dns, http, smtp, ftp, ftp-data, pop3, ssh, other (any value outside the list)"
+service=dns,service,one-hot,"-, dns, http, smtp, ftp, ftp-data, pop3, ssh, other (any value outside the list)"
+service=http,service,one-hot,"-, dns, http, smtp, ftp, ftp-data, pop3, ssh, other (any value outside the list)"
+service=smtp,service,one-hot,"-, dns, http, smtp, ftp, ftp-data, pop3, ssh, other (any value outside the list)"
+service=ftp,service,one-hot,"-, dns, http, smtp, ftp, ftp-data, pop3, ssh, other (any value outside the list)"
+service=ftp-data,service,one-hot,"-, dns, http, smtp, ftp, ftp-data, pop3, ssh, other (any value outside the list)"
+service=pop3,service,one-hot,"-, dns, http, smtp, ftp, ftp-data, pop3, ssh, other (any value outside the list)"
+service=ssh,service,one-hot,"-, dns, http, smtp, ftp, ftp-data, pop3, ssh, other (any value outside the list)"
+service=other,service,one-hot,"-, dns, http, smtp, ftp, ftp-data, pop3, ssh, other (any value outside the list)"
+state=FIN,state,one-hot,"FIN, INT, CON, REQ, RST, other (any value outside the list)"
+state=INT,state,one-hot,"FIN, INT, CON, REQ, RST, other (any value outside the list)"
+state=CON,state,one-hot,"FIN, INT, CON, REQ, RST, other (any value outside the list)"
+state=REQ,state,one-hot,"FIN, INT, CON, REQ, RST, other (any value outside the list)"
+state=RST,state,one-hot,"FIN, INT, CON, REQ, RST, other (any value outside the list)"
+state=other,state,one-hot,"FIN, INT, CON, REQ, RST, other (any value outside the list)"
