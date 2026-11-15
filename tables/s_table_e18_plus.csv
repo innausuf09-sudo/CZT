@@ -1,0 +1,11 @@
+Detector,Source,AUROC,ZDR,TPR at 1% FPR,Test FPR
+XGBoost,refit (main text),0.960,0.667,0.650,0.012
+LightGBM,refit (main text),0.961,0.652,0.650,0.011
+CZT-Hybrid,refit (main text),0.959,0.609,0.608,0.011
+CLAD,refit (main text),0.955,0.565,0.548,0.011
+IsolationForest,added,0.683,0.001,0.000,0.010
+Autoencoder,added,0.754,0.127,0.131,0.009
+EnergyMLP,added,0.946,0.470,0.484,0.009
+XGBoost-tuned,added,0.960,0.644,0.640,0.011
+LightGBM-tuned,added,0.959,0.683,0.669,0.011
+CLAD-200,added,0.947,0.433,0.393,0.011

@@ -1,0 +1,33 @@
+Information,Rule,Comparison,ZCV,ZCV median,KCV,KCV median,CV,CV median,Both objectives (first/second/trade-off)
+flag,main,CZT - Risk,17/2/13 (Holm 6/1),0.005,23/3/6 (Holm 21/2),0.013,27/1/5 (Holm 25/1),0.01,29/2/2
+flag,main,CZT - Linear,2/14/12 (Holm 1/7),-0.005,17/10/6 (Holm 12/8),0.006,13/9/12 (Holm 12/8),0.001,11/10/8
+flag,main,Linear - Risk,29/1/3 (Holm 23/1),0.009,15/8/8 (Holm 14/5),0.002,22/3/10 (Holm 17/1),0.006,25/2/7
+flag,main,PG - Risk,2/23/8 (Holm 1/21),-0.013,28/3/3 (Holm 27/3),0.025,23/5/6 (Holm 21/3),0.009,7/3/23
+flag,knee,CZT - Risk,11/13/6 (Holm 6/7),-0.002,19/4/12 (Holm 14/2),0.005,18/6/11 (Holm 12/3),0.003,13/2/14
+flag,knee,CZT - Linear,8/16/4 (Holm 6/10),-0.007,10/12/13 (Holm 6/11),-0.001,6/18/11 (Holm 2/9),-0.003,3/12/14
+flag,knee,Linear - Risk,17/8/4 (Holm 14/7),0.008,19/5/10 (Holm 17/4),0.006,25/2/7 (Holm 18/2),0.006,21/1/12
+flag,knee,PG - Risk,3/24/5 (Holm 3/21),-0.017,12/14/8 (Holm 9/11),-0.002,2/25/8 (Holm 1/23),-0.009,0/19/15
+flag,main,CZT - untuned Risk,33/0/0 (Holm 33/0),0.071,2/31/1 (Holm 2/28),-0.026,19/10/6 (Holm 15/6),0.007,4/2/29
+flag,main,Risk - untuned Risk,35/0/0 (Holm 35/0),0.065,3/30/1 (Holm 3/30),-0.044,12/18/5 (Holm 12/14),-0.006,5/0/30
+flag,main,Linear - untuned Risk,35/0/0 (Holm 35/0),0.075,3/31/1 (Holm 2/29),-0.033,19/11/3 (Holm 17/6),0.007,4/0/31
+flag,main,PG - untuned Risk,28/3/0 (Holm 26/3),0.041,8/22/4 (Holm 7/18),-0.013,19/7/8 (Holm 18/5),0.006,8/1/24
+flag,knee,CZT - untuned Risk,28/2/2 (Holm 25/0),0.031,29/1/4 (Holm 26/1),0.014,33/0/2 (Holm 33/0),0.017,32/0/3
+flag,knee,Risk - untuned Risk,32/0/2 (Holm 31/0),0.032,24/5/5 (Holm 21/4),0.009,35/0/0 (Holm 35/0),0.016,30/0/5
+flag,knee,Linear - untuned Risk,26/1/1 (Holm 25/1),0.03,26/1/7 (Holm 23/1),0.013,35/0/0 (Holm 35/0),0.019,33/0/2
+flag,knee,PG - untuned Risk,18/10/0 (Holm 18/7),0.014,22/7/4 (Holm 18/6),0.007,24/5/6 (Holm 23/5),0.009,17/1/16
+nov,main,CZT - Risk,12/8/3 (Holm 2/4),0.005,24/2/7 (Holm 15/1),0.008,24/4/7 (Holm 20/4),0.007,23/7/2
+nov,main,CZT - Linear,0/18/0 (Holm 0/10),-0.01,35/0/0 (Holm 35/0),0.034,28/0/6 (Holm 27/0),0.018,17/0/18
+nov,main,Linear - Risk,20/2/3 (Holm 15/1),0.011,0/32/3 (Holm 0/31),-0.026,2/28/5 (Holm 2/27),-0.013,1/13/19
+nov,main,PG - Risk,13/4/4 (Holm 7/1),0.006,6/11/18 (Holm 5/5),-0.002,9/8/18 (Holm 5/2),0.001,14/11/3
+nov,knee,CZT - Risk,3/11/9 (Holm 2/4),-0.003,24/0/11 (Holm 19/0),0.007,15/5/15 (Holm 8/1),0.002,18/4/7
+nov,knee,CZT - Linear,0/21/3 (Holm 0/16),-0.011,25/3/7 (Holm 21/1),0.01,14/8/13 (Holm 9/4),0.002,9/5/16
+nov,knee,Linear - Risk,15/2/5 (Holm 9/0),0.006,4/15/16 (Holm 3/12),-0.004,9/8/18 (Holm 6/3),0.001,8/6/10
+nov,knee,PG - Risk,7/3/9 (Holm 2/1),0.0,0/31/4 (Holm 0/25),-0.008,0/25/10 (Holm 0/20),-0.006,1/25/6
+nov,main,CZT - untuned Risk,17/5/2 (Holm 10/4),0.011,29/1/5 (Holm 25/0),0.014,27/2/4 (Holm 26/2),0.014,28/1/4
+nov,main,Risk - untuned Risk,16/5/7 (Holm 12/1),0.005,26/5/3 (Holm 24/3),0.007,28/1/6 (Holm 26/0),0.006,25/2/8
+nov,main,Linear - untuned Risk,24/3/0 (Holm 21/1),0.022,0/27/3 (Holm 0/24),-0.02,6/19/10 (Holm 3/15),-0.007,3/7/21
+nov,main,PG - untuned Risk,19/4/4 (Holm 16/1),0.011,18/4/13 (Holm 14/3),0.005,30/1/4 (Holm 26/1),0.008,24/1/7
+nov,knee,CZT - untuned Risk,18/7/1 (Holm 13/6),0.009,34/0/1 (Holm 33/0),0.023,33/1/1 (Holm 33/0),0.016,28/1/6
+nov,knee,Risk - untuned Risk,21/2/5 (Holm 15/2),0.009,35/0/0 (Holm 35/0),0.015,35/0/0 (Holm 35/0),0.012,33/0/2
+nov,knee,Linear - untuned Risk,26/2/0 (Holm 20/1),0.02,25/2/6 (Holm 20/2),0.01,29/2/4 (Holm 29/1),0.013,28/1/3
+nov,knee,PG - untuned Risk,20/3/3 (Holm 15/2),0.011,24/3/8 (Holm 14/0),0.006,30/0/5 (Holm 29/0),0.008,28/0/6
